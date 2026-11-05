@@ -1,0 +1,5 @@
+PK Knežija – najnoviji HTML iz Netlify deploymenta + H2H iz MAIN baza.
+
+Na GitHubu otvori repozitorij pk-knezija. Učitaj index.html, matches.json i .nojekyll u root mapu i potvrdi Commit changes.
+
+NAPOMENA: Ova verzija zadržava izgled i klijentski kod zadnjeg dostavljenog index.html, ali GitHub Pages ne izvršava Netlify funkcije. Automatska liga (/.netlify/functions/league) i LIVE (/api/live) neće raditi bez zamjenskog izvora/API-ja.
