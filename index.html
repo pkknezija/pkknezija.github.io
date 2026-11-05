@@ -265,8 +265,8 @@ function render(d){
  document.getElementById("upd").textContent="Osvježeno: "+new Date(d.updated).toLocaleString("hr-HR",{day:"numeric",month:"numeric",hour:"2-digit",minute:"2-digit"})+".";
 }
 function table(i){var t=DATA.teams[i];document.getElementById("tbl").innerHTML='<h3 class="lg">'+esc(t.label)+'</h3><table><thead><tr><th>#</th><th>Ekipa</th><th>Bodovi</th><th>Odigrano</th></tr></thead><tbody>'+t.standings.map(function(r){return '<tr'+(r.name===t.name?' class="me"':'')+'><td>'+r.pos+'</td><td>'+esc(nice(r.name))+'</td><td>'+r.pts+'</td><td>'+r.played+'</td></tr>'}).join('')+'</tbody></table>'}
-function fail(){var m='<p class="empty">Podaci s saveza trenutno nisu dostupni. Pokušaj ponovo kasnije.</p>';document.getElementById("next").innerHTML=m;document.getElementById("res").innerHTML=""}
-fetch("/.netlify/functions/league").then(function(r){if(!r.ok)throw 0;return r.json()}).then(render).catch(fail);
+function fail(){var m='<p class="empty">Podaci lige još nisu učitani ili se ne mogu osvježiti. Provjeri status automatskog ažuriranja na GitHubu.</p>';document.getElementById("next").innerHTML=m;document.getElementById("res").innerHTML=""}
+fetch("league.json?v="+Math.floor(Date.now()/60000),{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(render).catch(fail);
 var LIVE_ID=null;
 function live(){fetch("/api/live").then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){
  var box=document.getElementById("stream"),nav=document.querySelector('nav a[href="#uzivo"]');

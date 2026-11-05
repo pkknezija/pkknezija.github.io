@@ -1,0 +1,24 @@
+PK KNEŽIJA — H2H + pokušaj automatskog osvježavanja HPS lige
+
+GitHub Pages ne izvodi Netlify funkcije. Ovo rješenje koristi GitHub Actions.
+
+U GitHub repozitorij pkknezija/pkknezija.github.io prebaci:
+- index.html (zamijeni postojeći)
+- matches.json (može ostati postojeći)
+- .nojekyll
+- cijelu mapu scripts/
+- mapu .github/workflows/ (PAŽNJA: skrivena .github mapa)
+
+Zatim na GitHubu otvori Settings -> Actions -> General -> Workflow permissions
+i odaberi Read and write permissions, ako već nije uključeno.
+Otvori Actions -> Osvjezi HPS ligu -> Run workflow.
+Kad uspije, u repozitoriju će se pojaviti league.json.
+
+Ako workflow ne uspije, otvori njegov log i pošalji screenshot.
+Stara Netlify funkcija koristi fiksne ID-ove sezona/liga i TRI ekipe
+(815, 832, 830; seasonId 26). Ako su zastarjeli ili HPS promijeni
+format, treba ažurirati scripts/league-parser.cjs.
+
+Podaci se pokušavaju osvježiti svakih 15 minuta, NE u stvarnom vremenu.
+GitHub može odgoditi scheduled workflow. Podaci se mijenjaju samo ako
+HPS vrati nove informacije. Prijenosi YouTube nisu obuhvaćeni.
