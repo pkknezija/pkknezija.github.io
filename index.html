@@ -151,6 +151,15 @@ background:linear-gradient(180deg,#ffc27a,#e2541b 55%,#9b1015);-webkit-backgroun
 .stats-winner{color:#1c7c3a;font-weight:600}.stats-loser{color:var(--red);font-weight:600}
 .stats-filter-title{margin:30px 0 8px;font-size:22px}
 
+
+/* H2H tablica i filtriranje protivničkih klubova */
+.stats-h2h-table{min-width:540px}
+.stats-h2h-table tbody tr{cursor:pointer}
+.stats-h2h-table tbody tr:hover td{background:rgba(212,167,58,.14)}
+.stats-h2h-table tbody tr:focus{outline:2px solid var(--gold);outline-offset:-2px}
+.stats-h2h-table .h2h-record{font-weight:700;color:var(--gold2)}
+.stats-h2h-table .h2h-record small{font-weight:400;color:var(--muted)}
+.stats-h2h-table td small{color:var(--muted)}
 </style></head><body>
 <div id="intro" aria-hidden="true"></div>
 <header><nav><b>PK Knežija</b><a href="#ekipe">Ekipe</a><a href="#liga">Liga</a><a href="#statistika">Statistika / H2H</a><a href="#uzivo">Uživo</a><a href="#kontakt">Kontakt</a></nav></header>
@@ -184,13 +193,19 @@ background:linear-gradient(180deg,#ffc27a,#e2541b 55%,#9b1015);-webkit-backgroun
 <div class="stats-controls">
  <div><label for="stat-player">Igrač Knežije</label><select id="stat-player"><option value="">Učitavam igrače…</option></select></div>
  <div><label for="stat-opponent">H2H – protivnik</label><select id="stat-opponent"><option value="">Svi protivnici</option></select></div>
+ <div><label for="stat-club">Protivnički klub</label><select id="stat-club"><option value="">Svi klubovi</option></select></div>
  <div><label for="stat-season">Sezona</label><select id="stat-season"><option value="">Sve sezone</option></select></div>
  <div><label for="stat-search">Pretraži klub / protivnika</label><input id="stat-search" type="search" placeholder="Ime ili klub…"></div>
 </div>
 <div id="stat-summary" class="stats-cards" aria-live="polite"><p>Učitavam statistiku…</p></div>
 <p id="stat-description" class="stats-note"></p>
+<div id="stat-h2h-wrap">
+<h3 class="stats-filter-title">H2H – omjer protiv svih protivnika</h3>
+<p class="stats-note">Protivnici su poredani prema broju međusobnih mečeva, od najviše prema najmanje. Klikni protivnika za detaljnu povijest.</p>
+<div class="scroll"><table class="stats-table stats-h2h-table"><thead><tr><th>Protivnik / klub</th><th>Mečeva</th><th>Pobjede / porazi</th><th>Uspješnost</th></tr></thead><tbody id="stat-h2h-rows"></tbody></table></div>
+</div>
 <h3 class="stats-filter-title">Povijest mečeva</h3>
-<div class="scroll"><table class="stats-table"><thead><tr><th>Datum</th><th>Sezona</th><th>Klub / protivnik</th><th>Rezultat</th><th>Ishod</th><th>Ekipa</th></tr></thead><tbody id="stat-rows"><tr><td colspan="6">Učitavam…</td></tr></tbody></table></div>
+<div class="scroll"><table class="stats-table"><thead><tr><th>Datum</th><th>Sezona</th><th>Liga</th><th>Protivnik / klub</th><th>Rezultat</th><th>Ishod</th><th>Ekipa</th></tr></thead><tbody id="stat-rows"><tr><td colspan="7">Učitavam…</td></tr></tbody></table></div>
 <div class="stats-pagination"><span id="stat-count" class="stats-note"></span><div><button id="stat-prev" type="button">← Prethodna</button> <button id="stat-next" type="button">Sljedeća →</button></div></div>
 <p class="stats-note">Izvor: klupska Excel tablica, list „MAIN baza”. Statistika se ažurira učitavanjem nove datoteke matches.json. Neriješeni mečevi računaju se zasebno.</p>
 </section>
@@ -297,19 +312,30 @@ setTimeout(spawn,8000+Math.random()*10000)})();
 (function(){
 'use strict';
 var all=[],page=0,size=25;
-var player=document.getElementById('stat-player'),opp=document.getElementById('stat-opponent'),season=document.getElementById('stat-season'),search=document.getElementById('stat-search');
-var rows=document.getElementById('stat-rows'),summary=document.getElementById('stat-summary'),description=document.getElementById('stat-description'),count=document.getElementById('stat-count');
+var player=document.getElementById('stat-player'),opp=document.getElementById('stat-opponent'),club=document.getElementById('stat-club'),season=document.getElementById('stat-season'),search=document.getElementById('stat-search');
+var rows=document.getElementById('stat-rows'),summary=document.getElementById('stat-summary'),description=document.getElementById('stat-description'),count=document.getElementById('stat-count'),h2hWrap=document.getElementById('stat-h2h-wrap'),h2hRows=document.getElementById('stat-h2h-rows');
 function e(v){var d=document.createElement('div');d.textContent=String(v==null?'':v);return d.innerHTML}
 function key(v){return String(v||'').trim().toLocaleLowerCase('hr')}
 function opt(sel,values,first){sel.innerHTML='<option value="">'+e(first)+'</option>'+values.map(function(s){return '<option value="'+e(s).replace(/"/g,'&quot;')+'">'+e(s)+'</option>'}).join('')}
 function seasonKey(v){var m=String(v).match(/^\d{4}/);return m?Number(m[0]):0}
-function selectedMatches(){var p=key(player.value),o=key(opp.value),s=season.value,q=key(search.value);return all.filter(function(r){return key(r.p)===p&&(!o||key(r.o)===o)&&(!s||r.s===s)&&(!q||key(r.o+' '+r.c).includes(q))})}
-function baseMatches(){var p=key(player.value);return all.filter(function(r){return key(r.p)===p})}
-function updateOpp(){var old=opp.value;var pool=baseMatches().filter(function(r){return !season.value||r.s===season.value});var names=Array.from(new Set(pool.map(function(r){return r.o}))).sort(function(a,b){return a.localeCompare(b,'hr')});opt(opp,names,'Svi protivnici');if(names.some(function(x){return x===old}))opp.value=old;}
+function baseMatches(){var p=key(player.value);return all.filter(function(r){return key(r.p)===p&&(!season.value||r.s===season.value)})}
+function selectedMatches(){var o=key(opp.value),c=key(club.value),q=key(search.value);return baseMatches().filter(function(r){return (!o||key(r.o)===o)&&(!c||key(r.c)===c)&&(!q||key(r.o+' '+r.c).includes(q))})}
+function updateClubs(){var previous=club.value;var items=Array.from(new Set(baseMatches().map(function(r){return r.c}).filter(Boolean))).sort(function(a,b){return a.localeCompare(b,'hr')});opt(club,items,'Svi klubovi');if(items.includes(previous))club.value=previous}
+function updateOpp(){var previous=opp.value,c=key(club.value),pool=baseMatches().filter(function(r){return !c||key(r.c)===c});var names=Array.from(new Set(pool.map(function(r){return r.o}).filter(Boolean))).sort(function(a,b){return a.localeCompare(b,'hr')});opt(opp,names,'Svi protivnici');if(names.includes(previous))opp.value=previous}
 function card(label,value){return '<div class="stats-card"><strong>'+e(value)+'</strong><small>'+e(label)+'</small></div>'}
-function render(){var data=selectedMatches().sort(function(a,b){return (b.d||'').localeCompare(a.d||'')||String(b.m).localeCompare(String(a.m))});var wins=data.filter(function(r){return r.a>r.b}).length, losses=data.filter(function(r){return r.a<r.b}).length,ties=data.length-wins-losses,legsA=data.reduce(function(v,r){return v+r.a},0),legsB=data.reduce(function(v,r){return v+r.b},0);var pct=(wins+losses)?(100*wins/(wins+losses)).toLocaleString('hr-HR',{maximumFractionDigits:1})+' %':'—';summary.innerHTML=card('Odigrano mečeva',data.length)+card('Pobjede',wins)+card('Porazi',losses)+card('Uspješnost',pct)+card('Legovi',legsA+' : '+legsB)+(ties?card('Izjednačeni / za provjeru',ties):'');description.textContent=opp.value?'H2H: '+player.value+' protiv '+opp.value:'Svi mečevi igrača '+player.value+(season.value?' u sezoni '+season.value:'');var totalPages=Math.max(1,Math.ceil(data.length/size));page=Math.max(0,Math.min(page,totalPages-1));var shown=data.slice(page*size,(page+1)*size);rows.innerHTML=shown.map(function(r){var result=r.a>r.b?'Pobjeda':r.a<r.b?'Poraz':'Neodlučeno';var cls=r.a>r.b?'stats-winner':r.a<r.b?'stats-loser':'';return '<tr><td>'+e(r.d?new Date(r.d+'T12:00:00').toLocaleDateString('hr-HR'):'—')+'</td><td>'+e(r.s)+'</td><td><b>'+e(r.o)+'</b><br><small>'+e(r.c)+'</small></td><td><strong>'+e(r.a+' : '+r.b)+'</strong></td><td class="'+cls+'">'+result+'</td><td>'+e(r.t)+(r.h?' · '+e(r.h):'')+'</td></tr>'}).join('')||'<tr><td colspan="6">Nema mečeva za odabrane filtre.</td></tr>';count.textContent=data.length?'Prikaz '+(page*size+1)+'–'+Math.min((page+1)*size,data.length)+' od '+data.length+' mečeva':'0 mečeva';document.getElementById('stat-prev').disabled=page===0;document.getElementById('stat-next').disabled=page>=totalPages-1;}
-player.addEventListener('change',function(){page=0;updateOpp();render()});season.addEventListener('change',function(){page=0;updateOpp();render()});opp.addEventListener('change',function(){page=0;render()});search.addEventListener('input',function(){page=0;render()});document.getElementById('stat-prev').addEventListener('click',function(){page--;render()});document.getElementById('stat-next').addEventListener('click',function(){page++;render()});
-fetch('matches.json').then(function(r){if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(function(data){all=data;var players=Array.from(new Set(all.map(function(r){return r.p}))).sort(function(a,b){return a.localeCompare(b,'hr')});var seasons=Array.from(new Set(all.map(function(r){return r.s}).filter(Boolean))).sort(function(a,b){return seasonKey(b)-seasonKey(a)||b.localeCompare(a)});opt(player,players,'Odaberi igrača');opt(season,seasons,'Sve sezone');if(players.length){player.value=players[0];updateOpp();render()}else{summary.textContent='Nema podataka o mečevima.'}}).catch(function(error){summary.textContent='Nije moguće učitati statistiku. Provjeri je li matches.json postavljen uz index.html.';rows.innerHTML='<tr><td colspan="6">Greška učitavanja podataka.</td></tr>';console.error('Statistika:',error)});
+function outcome(r){return r.a>r.b?1:r.a<r.b?-1:0}
+function renderH2H(data){h2hWrap.hidden=Boolean(opp.value);if(opp.value)return;
+ var stats=new Map();data.forEach(function(r){var id=key(r.o);if(!stats.has(id))stats.set(id,{name:r.o,clubs:new Set(),total:0,w:0,l:0,t:0});var v=stats.get(id);v.total++;v.clubs.add(r.c);var result=outcome(r);if(result>0)v.w++;else if(result<0)v.l++;else v.t++});
+ var grouped=Array.from(stats.values()).sort(function(a,b){return b.total-a.total||b.w-a.w||a.name.localeCompare(b.name,'hr')});
+ h2hRows.innerHTML=grouped.map(function(v){var pct=v.w+v.l?((100*v.w/(v.w+v.l)).toLocaleString('hr-HR',{maximumFractionDigits:1})+' %'):'—';return '<tr tabindex="0" role="button" aria-label="Pokaži mečeve protiv '+e(v.name)+'" data-opponent="'+e(v.name).replace(/"/g,'&quot;')+'"><td><b>'+e(v.name)+'</b><br><small>'+e(Array.from(v.clubs).filter(Boolean).sort().join(', '))+'</small></td><td><strong>'+v.total+'</strong></td><td class="h2h-record">'+v.w+' / '+v.l+(v.t?' <small>(+'+v.t+' neriješenih)</small>':'')+'</td><td>'+pct+'</td></tr>'}).join('')||'<tr><td colspan="4">Nema protivnika za odabrane filtre.</td></tr>';
+}
+function render(){var data=selectedMatches().sort(function(a,b){return (b.d||'').localeCompare(a.d||'')||String(b.m).localeCompare(String(a.m))});var wins=data.filter(function(r){return outcome(r)>0}).length,losses=data.filter(function(r){return outcome(r)<0}).length,ties=data.length-wins-losses,legsA=data.reduce(function(v,r){return v+r.a},0),legsB=data.reduce(function(v,r){return v+r.b},0);var pct=(wins+losses)?(100*wins/(wins+losses)).toLocaleString('hr-HR',{maximumFractionDigits:1})+' %':'—';summary.innerHTML=card('Odigrano mečeva',data.length)+card('Pobjede',wins)+card('Porazi',losses)+card('Uspješnost',pct)+card('Legovi',legsA+' : '+legsB)+(ties?card('Izjednačeni / za provjeru',ties):'');description.textContent=(opp.value?'H2H: '+player.value+' protiv '+opp.value:'Svi protivnici igrača '+player.value)+(club.value?' · Klub: '+club.value:'')+(season.value?' · Sezona: '+season.value:'');renderH2H(data);
+ var totalPages=Math.max(1,Math.ceil(data.length/size));page=Math.max(0,Math.min(page,totalPages-1));var shown=data.slice(page*size,(page+1)*size);rows.innerHTML=shown.map(function(r){var result=outcome(r)>0?'Pobjeda':outcome(r)<0?'Poraz':'Neodlučeno';var cls=outcome(r)>0?'stats-winner':outcome(r)<0?'stats-loser':'';return '<tr><td>'+e(r.d?new Date(r.d+'T12:00:00').toLocaleDateString('hr-HR'):'—')+'</td><td>'+e(r.s)+'</td><td>'+e(r.l||'—')+'</td><td><b>'+e(r.o)+'</b><br><small>'+e(r.c)+'</small></td><td><strong>'+e(r.a+' : '+r.b)+'</strong></td><td class="'+cls+'">'+result+'</td><td>'+e(r.t)+'</td></tr>'}).join('')||'<tr><td colspan="7">Nema mečeva za odabrane filtre.</td></tr>';count.textContent=data.length?'Prikaz '+(page*size+1)+'–'+Math.min((page+1)*size,data.length)+' od '+data.length+' mečeva':'0 mečeva';document.getElementById('stat-prev').disabled=page===0;document.getElementById('stat-next').disabled=page>=totalPages-1;
+}
+player.addEventListener('change',function(){page=0;opp.value='';club.value='';updateClubs();updateOpp();render()});season.addEventListener('change',function(){page=0;updateClubs();updateOpp();render()});club.addEventListener('change',function(){page=0;updateOpp();render()});opp.addEventListener('change',function(){page=0;render()});search.addEventListener('input',function(){page=0;render()});document.getElementById('stat-prev').addEventListener('click',function(){page--;render()});document.getElementById('stat-next').addEventListener('click',function(){page++;render()});
+function chooseOpponent(target){var el=target.closest('tr[data-opponent]');if(!el)return;opp.value=el.getAttribute('data-opponent');page=0;render();document.getElementById('stat-rows').closest('table').scrollIntoView({behavior:'smooth',block:'start'})}
+h2hRows.addEventListener('click',function(ev){chooseOpponent(ev.target)});h2hRows.addEventListener('keydown',function(ev){if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();chooseOpponent(ev.target)}});
+fetch('matches.json').then(function(r){if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(function(data){all=data;var players=Array.from(new Set(all.map(function(r){return r.p}))).sort(function(a,b){return a.localeCompare(b,'hr')});var seasons=Array.from(new Set(all.map(function(r){return r.s}).filter(Boolean))).sort(function(a,b){return seasonKey(b)-seasonKey(a)||b.localeCompare(a)});opt(player,players,'Odaberi igrača');opt(season,seasons,'Sve sezone');if(players.length){player.value=players[0];updateClubs();updateOpp();render()}else{summary.textContent='Nema podataka o mečevima.'}}).catch(function(error){summary.textContent='Nije moguće učitati statistiku. Provjeri je li matches.json postavljen uz index.html.';rows.innerHTML='<tr><td colspan="7">Greška učitavanja podataka.</td></tr>';console.error('Statistika:',error)});
 })();
 </script>
 </body></html>
