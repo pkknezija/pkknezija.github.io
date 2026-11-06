@@ -1,0 +1,27 @@
+name: Probni uvoz HPS zapisnika u H2H
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Dodaj provjerene meceve HPS zapisnika exlupuqv
+        run: node scripts/import-hps-test.cjs
+      - name: Spremi samo ako ima novih meceva
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add matches.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Probni uvoz HPS utakmice exlupuqv u H2H'
+            git pull --rebase
+            git push
+          else
+            echo 'Nema novih meceva za uvoz.'
+          fi
