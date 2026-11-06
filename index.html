@@ -91,11 +91,7 @@ footer a{color:var(--gold)}
 .runes{font-family:"Noto Sans Runic",sans-serif;color:var(--gold);opacity:.35;letter-spacing:.7em;font-size:16px;text-align:center;white-space:nowrap;overflow:hidden;padding:16px 0;user-select:none}
 footer .runes{padding:0 0 18px}
 @media (max-width:760px){.hero>div{grid-template-columns:1fr;padding:56px 20px 80px;gap:20px}.logo{order:-1;width:min(74vw,400px)}.hero::before{right:-900px;top:20%}}
-#intro{position:fixed;inset:0;z-index:100;cursor:pointer;overflow:hidden;animation:inFade .5s ease-out}
-#intro .s{position:absolute;inset:0;background-color:transparent;background-repeat:no-repeat;background-position:center;background-size:min(88vw,760px) auto,100% 100%;background-blend-mode:multiply;will-change:transform,opacity}
-#intro.go .s{transform:translate(var(--x),var(--y)) rotate(var(--r));opacity:0;transition:transform 1s cubic-bezier(.6,0,.9,.5) var(--d),opacity .35s linear calc(var(--d) + .65s)}
-@keyframes inFade{from{opacity:0}to{opacity:1}}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}#intro{display:none}.team,.btn{transition:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.team,.btn{transition:none}}
 .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
 .tabs button{font:700 14px "Cinzel",serif;letter-spacing:.06em;padding:10px 16px;border-radius:2px;border:1px solid var(--line);background:linear-gradient(#211b15,#14100c);color:var(--fg);cursor:pointer;transition:border-color .2s}
 .tabs button:hover{border-color:var(--gold)}
@@ -161,7 +157,6 @@ background:linear-gradient(180deg,#ffc27a,#e2541b 55%,#9b1015);-webkit-backgroun
 .stats-h2h-table .h2h-record small{font-weight:400;color:var(--muted)}
 .stats-h2h-table td small{color:var(--muted)}
 </style></head><body>
-<div id="intro" aria-hidden="true"></div>
 <header><nav><b>PK Knežija</b><a href="#ekipe">Ekipe</a><a href="#liga">Liga</a><a href="statistika.html">Statistika / H2H</a><a href="#uzivo">Uživo</a><a href="#kontakt">Kontakt</a></nav></header>
 <main>
 <section class="hero"><div>
@@ -187,11 +182,6 @@ background:linear-gradient(180deg,#ffc27a,#e2541b 55%,#9b1015);-webkit-backgroun
 <p class="empty" style="margin-top:20px;font-size:14px">Izvor: <a href="https://hps-dart.hr/ps-grad-zagreb">Hrvatski pikado savez, PS Grad Zagreb</a>. <span id="upd"></span></p>
 </div></section>
 
-<section class="stats-promo" aria-labelledby="stats-promo-title" style="padding-block:48px;text-align:center">
-<h2 id="stats-promo-title">Statistika i H2H</h2>
-<p class="lead" style="margin:0 auto 22px">Pregledaj povijest mečeva, statistiku igrača i omjere protiv svakog protivnika.</p>
-<a class="btn alt" href="statistika.html">Otvori statistiku →</a>
-</section>
 <section id="uzivo"><h2>Uživo</h2><p class="lead">Naše utakmice prenosimo uživo na YouTube kanalu <a href="https://www.youtube.com/@EroDartsKne%C5%BEija" target="_blank" rel="noopener">Pikado klub Knežija</a>. Kad prijenos krene, pojavit će se ovdje automatski.</p>
 <div class="box" id="stream"><h3>Stream</h3><p class="empty">Trenutno nema prijenosa uživo. Stranica sama provjerava svake minute.</p></div></section>
 
@@ -209,18 +199,6 @@ background:linear-gradient(180deg,#ffc27a,#e2541b 55%,#9b1015);-webkit-backgroun
 <footer><div class="runes" aria-hidden="true">ᛟ ᛞ ᛜ ᛚ ᛗ ᛖ ᛒ ᛏ ᛊ ᛉ ᛈ ᛇ ᛃ ᛁ ᚾ ᚺ ᚹ ᚷ</div>© <span id="y"></span> Pikado klub Knežija · <a href="mailto:pkknezija@gmail.com">pkknezija@gmail.com</a></footer>
 <script>
 document.getElementById("y").textContent=new Date().getFullYear();
-(function(){var el=document.getElementById("intro"),img=document.querySelector(".logo img");
-if(!el||!img)return;
-if(matchMedia("(prefers-reduced-motion: reduce)").matches){el.remove();return}
-var N=20,P=Math.PI/180,big=Math.max(innerWidth,innerHeight)*1.3,R=big*2,src='url("'+img.src+'")',done=false;
-for(var i=0;i<N;i++){var a0=(i*18-99)*P,a1=a0+18*P,am=(a0+a1)/2,s=document.createElement("div");s.className="s";
-s.style.backgroundImage=src+',radial-gradient(circle,#f3e7c8 0 min(46vw,400px),#d4a73a 0 calc(min(46vw,400px) + 7px),#0c0a08 0)';
-s.style.clipPath="polygon(50% 50%,calc(50% + "+R*Math.cos(a0)+"px) calc(50% + "+R*Math.sin(a0)+"px),calc(50% + "+R*Math.cos(a1)+"px) calc(50% + "+R*Math.sin(a1)+"px))";
-s.style.setProperty("--x",Math.cos(am)*big+"px");s.style.setProperty("--y",Math.sin(am)*big+"px");
-s.style.setProperty("--r",(i%2?9:-9)+"deg");s.style.setProperty("--d",(i*0.02)+"s");el.appendChild(s)}
-document.body.style.overflow="hidden";
-function end(){if(done)return;done=true;el.remove();document.body.style.overflow=""}
-setTimeout(function(){el.classList.add("go")},1400);setTimeout(end,3000);el.addEventListener("click",end)})();
 function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML}
 function nice(s){return s.toLowerCase().replace(/(^|\s)\S/g,function(c){return c.toUpperCase()})}
 function fd(iso){return new Date(iso).toLocaleString("hr-HR",{weekday:"short",day:"numeric",month:"numeric",hour:"2-digit",minute:"2-digit"})}
