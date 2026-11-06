@@ -1,0 +1,39 @@
+name: Automatski HPS uvoz u H2H
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '12,42 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: matches-hps-import
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Preuzmi repozitorij
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Postavi Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test parsera i zastite od duplikata
+        run: node scripts/test-auto-import-hps.cjs
+      - name: Provjeri HPS i nadopuni bazu
+        run: node scripts/auto-import-hps.cjs
+      - name: Spremi samo ako ima promjena
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add matches.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Automatski HPS H2H rezultati'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          else
+            echo 'Nema novih H2H rezultata.'
+          fi
