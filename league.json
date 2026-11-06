@@ -1,0 +1,839 @@
+{
+  "updated": "2026-11-06T09:04:21.978Z",
+  "teams": [
+    {
+      "name": "KNEŽIJA DRINKING DWARVES",
+      "label": "1. liga",
+      "standings": [
+        {
+          "pos": 1,
+          "name": "DARTS POINT TEAM BAN",
+          "pts": 21,
+          "played": 7
+        },
+        {
+          "pos": 2,
+          "name": "SESVETE",
+          "pts": 18,
+          "played": 7
+        },
+        {
+          "pos": 3,
+          "name": "BILLIONAIRES",
+          "pts": 18,
+          "played": 7
+        },
+        {
+          "pos": 4,
+          "name": "IPA ZAGREB",
+          "pts": 18,
+          "played": 7
+        },
+        {
+          "pos": 5,
+          "name": "JANJE MIX TEAM",
+          "pts": 17,
+          "played": 7
+        },
+        {
+          "pos": 6,
+          "name": "PANDA RAVNICE",
+          "pts": 15,
+          "played": 7
+        },
+        {
+          "pos": 7,
+          "name": "A1",
+          "pts": 15,
+          "played": 7
+        },
+        {
+          "pos": 8,
+          "name": "DC SUNSET",
+          "pts": 7,
+          "played": 7
+        },
+        {
+          "pos": 9,
+          "name": "AGRAM DARTS TEAM",
+          "pts": 6,
+          "played": 7
+        },
+        {
+          "pos": 10,
+          "name": "GOSPOĐE",
+          "pts": 6,
+          "played": 7
+        },
+        {
+          "pos": 11,
+          "name": "A1 OTPISANI",
+          "pts": 3,
+          "played": 7
+        },
+        {
+          "pos": 12,
+          "name": "DINAMO",
+          "pts": 2,
+          "played": 7
+        },
+        {
+          "pos": 13,
+          "name": "JANJE ORION",
+          "pts": 1,
+          "played": 7
+        },
+        {
+          "pos": 14,
+          "name": "KNEŽIJA DRINKING DWARVES",
+          "pts": 0,
+          "played": 7
+        }
+      ],
+      "matches": [
+        {
+          "round": 1,
+          "home": "DC SUNSET",
+          "away": "KNEŽIJA DRINKING DWARVES",
+          "hs": 11,
+          "as": 5,
+          "played": true,
+          "date": "2026-09-24T19:00:00+02:00"
+        },
+        {
+          "round": 2,
+          "home": "KNEŽIJA DRINKING DWARVES",
+          "away": "AGRAM DARTS TEAM",
+          "hs": 7,
+          "as": 9,
+          "played": true,
+          "date": "2026-10-01T19:00:00+02:00"
+        },
+        {
+          "round": 3,
+          "home": "A1",
+          "away": "KNEŽIJA DRINKING DWARVES",
+          "hs": 11,
+          "as": 5,
+          "played": true,
+          "date": "2026-10-08T19:00:00+02:00"
+        },
+        {
+          "round": 4,
+          "home": "KNEŽIJA DRINKING DWARVES",
+          "away": "JANJE MIX TEAM",
+          "hs": 5,
+          "as": 11,
+          "played": true,
+          "date": "2026-10-15T19:00:00+02:00"
+        },
+        {
+          "round": 5,
+          "home": "IPA ZAGREB",
+          "away": "KNEŽIJA DRINKING DWARVES",
+          "hs": 16,
+          "as": 0,
+          "played": true,
+          "date": "2026-10-22T19:00:00+02:00"
+        },
+        {
+          "round": 6,
+          "home": "KNEŽIJA DRINKING DWARVES",
+          "away": "SESVETE",
+          "hs": 2,
+          "as": 14,
+          "played": true,
+          "date": "2026-10-29T19:00:00+01:00"
+        },
+        {
+          "round": 7,
+          "home": "DARTS POINT TEAM BAN",
+          "away": "KNEŽIJA DRINKING DWARVES",
+          "hs": 15,
+          "as": 1,
+          "played": true,
+          "date": "2026-11-05T19:00:00+01:00"
+        },
+        {
+          "round": 8,
+          "home": "KNEŽIJA DRINKING DWARVES",
+          "away": "DINAMO",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2026-11-12T19:00:00+01:00"
+        },
+        {
+          "round": 9,
+          "home": "GOSPOĐE",
+          "away": "KNEŽIJA DRINKING DWARVES",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2026-11-19T19:00:00+01:00"
+        },
+        {
+          "round": 10,
+          "home": "KNEŽIJA DRINKING DWARVES",
+          "away": "A1 OTPISANI",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2026-11-26T19:00:00+01:00"
+        },
+        {
+          "round": 11,
+          "home": "JANJE ORION",
+          "away": "KNEŽIJA DRINKING DWARVES",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2026-12-03T19:00:00+01:00"
+        },
+        {
+          "round": 12,
+          "home": "PANDA RAVNICE",
+          "away": "KNEŽIJA DRINKING DWARVES",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2026-12-10T19:00:00+01:00"
+        },
+        {
+          "round": 13,
+          "home": "KNEŽIJA DRINKING DWARVES",
+          "away": "BILLIONAIRES",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2026-12-17T19:00:00+01:00"
+        },
+        {
+          "round": 14,
+          "home": "KNEŽIJA DRINKING DWARVES",
+          "away": "DC SUNSET",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-01-21T19:00:00+01:00"
+        },
+        {
+          "round": 15,
+          "home": "AGRAM DARTS TEAM",
+          "away": "KNEŽIJA DRINKING DWARVES",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-01-28T19:00:00+01:00"
+        },
+        {
+          "round": 16,
+          "home": "KNEŽIJA DRINKING DWARVES",
+          "away": "A1",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-02-04T19:00:00+01:00"
+        },
+        {
+          "round": 17,
+          "home": "JANJE MIX TEAM",
+          "away": "KNEŽIJA DRINKING DWARVES",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-02-11T19:00:00+01:00"
+        },
+        {
+          "round": 18,
+          "home": "KNEŽIJA DRINKING DWARVES",
+          "away": "IPA ZAGREB",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-02-18T19:00:00+01:00"
+        },
+        {
+          "round": 19,
+          "home": "SESVETE",
+          "away": "KNEŽIJA DRINKING DWARVES",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-02-25T19:00:00+01:00"
+        },
+        {
+          "round": 20,
+          "home": "KNEŽIJA DRINKING DWARVES",
+          "away": "DARTS POINT TEAM BAN",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-03-04T19:00:00+01:00"
+        },
+        {
+          "round": 21,
+          "home": "DINAMO",
+          "away": "KNEŽIJA DRINKING DWARVES",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-03-11T19:00:00+01:00"
+        },
+        {
+          "round": 22,
+          "home": "KNEŽIJA DRINKING DWARVES",
+          "away": "GOSPOĐE",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-03-18T19:00:00+01:00"
+        },
+        {
+          "round": 23,
+          "home": "A1 OTPISANI",
+          "away": "KNEŽIJA DRINKING DWARVES",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-03-25T19:00:00+01:00"
+        },
+        {
+          "round": 24,
+          "home": "KNEŽIJA DRINKING DWARVES",
+          "away": "JANJE ORION",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-04-01T19:00:00+02:00"
+        },
+        {
+          "round": 25,
+          "home": "KNEŽIJA DRINKING DWARVES",
+          "away": "PANDA RAVNICE",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-04-08T19:00:00+02:00"
+        },
+        {
+          "round": 26,
+          "home": "BILLIONAIRES",
+          "away": "KNEŽIJA DRINKING DWARVES",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-04-15T19:00:00+02:00"
+        }
+      ]
+    },
+    {
+      "name": "KNEŽIJA UNITED",
+      "label": "4. liga, skupina C",
+      "standings": [
+        {
+          "pos": 1,
+          "name": "BULLDOG CBM",
+          "pts": 18,
+          "played": 6
+        },
+        {
+          "pos": 2,
+          "name": "KNEŽIJA UNITED",
+          "pts": 16,
+          "played": 6
+        },
+        {
+          "pos": 3,
+          "name": "IPA ZAGREB 3",
+          "pts": 12,
+          "played": 6
+        },
+        {
+          "pos": 4,
+          "name": "JANJE FENIKS",
+          "pts": 12,
+          "played": 7
+        },
+        {
+          "pos": 5,
+          "name": "KOCKA APEX",
+          "pts": 9,
+          "played": 7
+        },
+        {
+          "pos": 6,
+          "name": "MOZART GENTLEMEN",
+          "pts": 7,
+          "played": 6
+        },
+        {
+          "pos": 7,
+          "name": "CB X",
+          "pts": 7,
+          "played": 7
+        },
+        {
+          "pos": 8,
+          "name": "MAK DARTS",
+          "pts": 7,
+          "played": 7
+        },
+        {
+          "pos": 9,
+          "name": "BILLIONAIRES CASPER",
+          "pts": 7,
+          "played": 6
+        },
+        {
+          "pos": 10,
+          "name": "BLACK M 2",
+          "pts": 6,
+          "played": 6
+        },
+        {
+          "pos": 11,
+          "name": "SREDNJACI",
+          "pts": 4,
+          "played": 8
+        }
+      ],
+      "matches": [
+        {
+          "round": 1,
+          "home": "KNEŽIJA UNITED",
+          "away": "KOCKA APEX",
+          "hs": 8,
+          "as": 9,
+          "played": true,
+          "date": "2026-09-11T19:00:00+02:00"
+        },
+        {
+          "round": 2,
+          "home": "BILLIONAIRES CASPER",
+          "away": "KNEŽIJA UNITED",
+          "hs": 4,
+          "as": 12,
+          "played": true,
+          "date": "2026-09-18T19:00:00+02:00"
+        },
+        {
+          "round": 4,
+          "home": "KNEŽIJA UNITED",
+          "away": "JANJE FENIKS",
+          "hs": 10,
+          "as": 6,
+          "played": true,
+          "date": "2026-09-30T19:00:00+02:00"
+        },
+        {
+          "round": 5,
+          "home": "MOZART GENTLEMEN",
+          "away": "KNEŽIJA UNITED",
+          "hs": 6,
+          "as": 10,
+          "played": true,
+          "date": "2026-10-09T19:00:00+02:00"
+        },
+        {
+          "round": 6,
+          "home": "KNEŽIJA UNITED",
+          "away": "MAK DARTS",
+          "hs": 10,
+          "as": 6,
+          "played": true,
+          "date": "2026-10-23T19:00:00+02:00"
+        },
+        {
+          "round": 7,
+          "home": "SREDNJACI",
+          "away": "KNEŽIJA UNITED",
+          "hs": 3,
+          "as": 13,
+          "played": true,
+          "date": "2026-10-30T19:00:00+01:00"
+        },
+        {
+          "round": 8,
+          "home": "KNEŽIJA UNITED",
+          "away": "BLACK M 2",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2026-11-06T19:00:00+01:00"
+        },
+        {
+          "round": 9,
+          "home": "IPA ZAGREB 3",
+          "away": "KNEŽIJA UNITED",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2026-11-13T19:00:00+01:00"
+        },
+        {
+          "round": 10,
+          "home": "KNEŽIJA UNITED",
+          "away": "BULLDOG CBM",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2026-11-20T19:00:00+01:00"
+        },
+        {
+          "round": 11,
+          "home": "CB X",
+          "away": "KNEŽIJA UNITED",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2026-11-27T19:00:00+01:00"
+        },
+        {
+          "round": 12,
+          "home": "KOCKA APEX",
+          "away": "KNEŽIJA UNITED",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2026-12-04T19:00:00+01:00"
+        },
+        {
+          "round": 13,
+          "home": "KNEŽIJA UNITED",
+          "away": "BILLIONAIRES CASPER",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2026-12-11T19:00:00+01:00"
+        },
+        {
+          "round": 15,
+          "home": "JANJE FENIKS",
+          "away": "KNEŽIJA UNITED",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-01-15T19:00:00+01:00"
+        },
+        {
+          "round": 16,
+          "home": "KNEŽIJA UNITED",
+          "away": "MOZART GENTLEMEN",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-01-22T19:00:00+01:00"
+        },
+        {
+          "round": 17,
+          "home": "MAK DARTS",
+          "away": "KNEŽIJA UNITED",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-01-28T19:00:00+01:00"
+        },
+        {
+          "round": 18,
+          "home": "KNEŽIJA UNITED",
+          "away": "SREDNJACI",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-02-05T19:00:00+01:00"
+        },
+        {
+          "round": 19,
+          "home": "BLACK M 2",
+          "away": "KNEŽIJA UNITED",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-02-19T19:00:00+01:00"
+        },
+        {
+          "round": 20,
+          "home": "KNEŽIJA UNITED",
+          "away": "IPA ZAGREB 3",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-02-26T19:00:00+01:00"
+        },
+        {
+          "round": 21,
+          "home": "BULLDOG CBM",
+          "away": "KNEŽIJA UNITED",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-03-05T19:00:00+01:00"
+        },
+        {
+          "round": 22,
+          "home": "KNEŽIJA UNITED",
+          "away": "CB X",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-03-12T19:00:00+01:00"
+        }
+      ]
+    },
+    {
+      "name": "FAKINI KNEŽIJA",
+      "label": "4. liga, skupina A",
+      "standings": [
+        {
+          "pos": 1,
+          "name": "PK ZAPAD 1",
+          "pts": 19,
+          "played": 7
+        },
+        {
+          "pos": 2,
+          "name": "VIZITA",
+          "pts": 18,
+          "played": 6
+        },
+        {
+          "pos": 3,
+          "name": "MOZART DUBRAVA",
+          "pts": 13,
+          "played": 7
+        },
+        {
+          "pos": 4,
+          "name": "FAKINI KNEŽIJA",
+          "pts": 13,
+          "played": 6
+        },
+        {
+          "pos": 5,
+          "name": "HOLLYWOOD T1",
+          "pts": 12,
+          "played": 6
+        },
+        {
+          "pos": 6,
+          "name": "JANJE TEAM",
+          "pts": 8,
+          "played": 6
+        },
+        {
+          "pos": 7,
+          "name": "BILLIONAIRES 3 PROMILA",
+          "pts": 7,
+          "played": 6
+        },
+        {
+          "pos": 8,
+          "name": "DINAMO ZG",
+          "pts": 7,
+          "played": 6
+        },
+        {
+          "pos": 9,
+          "name": "QUATTRO SOPNICA",
+          "pts": 5,
+          "played": 6
+        },
+        {
+          "pos": 10,
+          "name": "KOCKA WARRIORS",
+          "pts": 3,
+          "played": 7
+        },
+        {
+          "pos": 11,
+          "name": "ŠARCI GAJNICE",
+          "pts": 0,
+          "played": 7
+        }
+      ],
+      "matches": [
+        {
+          "round": 1,
+          "home": "KOCKA WARRIORS",
+          "away": "FAKINI KNEŽIJA",
+          "hs": 4,
+          "as": 12,
+          "played": true,
+          "date": "2026-09-10T19:00:00+02:00"
+        },
+        {
+          "round": 2,
+          "home": "FAKINI KNEŽIJA",
+          "away": "ŠARCI GAJNICE",
+          "hs": 10,
+          "as": 6,
+          "played": true,
+          "date": "2026-09-18T19:00:00+02:00"
+        },
+        {
+          "round": 3,
+          "home": "BILLIONAIRES 3 PROMILA",
+          "away": "FAKINI KNEŽIJA",
+          "hs": 6,
+          "as": 10,
+          "played": true,
+          "date": "2026-09-25T19:00:00+02:00"
+        },
+        {
+          "round": 5,
+          "home": "FAKINI KNEŽIJA",
+          "away": "JANJE TEAM",
+          "hs": 10,
+          "as": 6,
+          "played": true,
+          "date": "2026-10-09T19:00:00+02:00"
+        },
+        {
+          "round": 6,
+          "home": "MOZART DUBRAVA",
+          "away": "FAKINI KNEŽIJA",
+          "hs": 9,
+          "as": 8,
+          "played": true,
+          "date": "2026-10-23T19:00:00+02:00"
+        },
+        {
+          "round": 7,
+          "home": "FAKINI KNEŽIJA",
+          "away": "PK ZAPAD 1",
+          "hs": 6,
+          "as": 10,
+          "played": true,
+          "date": "2026-10-30T19:00:00+01:00"
+        },
+        {
+          "round": 8,
+          "home": "VIZITA",
+          "away": "FAKINI KNEŽIJA",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2026-11-06T19:00:00+01:00"
+        },
+        {
+          "round": 9,
+          "home": "FAKINI KNEŽIJA",
+          "away": "HOLLYWOOD T1",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2026-11-13T19:00:00+01:00"
+        },
+        {
+          "round": 10,
+          "home": "QUATTRO SOPNICA",
+          "away": "FAKINI KNEŽIJA",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2026-11-20T19:00:00+01:00"
+        },
+        {
+          "round": 11,
+          "home": "FAKINI KNEŽIJA",
+          "away": "DINAMO ZG",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2026-11-27T19:00:00+01:00"
+        },
+        {
+          "round": 12,
+          "home": "FAKINI KNEŽIJA",
+          "away": "KOCKA WARRIORS",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2026-12-04T19:00:00+01:00"
+        },
+        {
+          "round": 13,
+          "home": "ŠARCI GAJNICE",
+          "away": "FAKINI KNEŽIJA",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2026-12-11T19:00:00+01:00"
+        },
+        {
+          "round": 14,
+          "home": "FAKINI KNEŽIJA",
+          "away": "BILLIONAIRES 3 PROMILA",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-01-08T19:00:00+01:00"
+        },
+        {
+          "round": 16,
+          "home": "JANJE TEAM",
+          "away": "FAKINI KNEŽIJA",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-01-22T19:00:00+01:00"
+        },
+        {
+          "round": 17,
+          "home": "FAKINI KNEŽIJA",
+          "away": "MOZART DUBRAVA",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-01-29T19:00:00+01:00"
+        },
+        {
+          "round": 18,
+          "home": "PK ZAPAD 1",
+          "away": "FAKINI KNEŽIJA",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-02-05T19:00:00+01:00"
+        },
+        {
+          "round": 19,
+          "home": "FAKINI KNEŽIJA",
+          "away": "VIZITA",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-02-19T19:00:00+01:00"
+        },
+        {
+          "round": 20,
+          "home": "HOLLYWOOD T1",
+          "away": "FAKINI KNEŽIJA",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-02-26T19:00:00+01:00"
+        },
+        {
+          "round": 21,
+          "home": "FAKINI KNEŽIJA",
+          "away": "QUATTRO SOPNICA",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-03-05T19:00:00+01:00"
+        },
+        {
+          "round": 22,
+          "home": "DINAMO ZG",
+          "away": "FAKINI KNEŽIJA",
+          "hs": 0,
+          "as": 0,
+          "played": false,
+          "date": "2027-03-12T19:00:00+01:00"
+        }
+      ]
+    }
+  ]
+}
