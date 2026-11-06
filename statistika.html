@@ -1,0 +1,215 @@
+<!DOCTYPE html><html lang="hr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Statistika i H2H | PK Knežija</title><meta name="description" content="H2H, statistika igrača i povijest mečeva Pikado kluba Knežija."><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@600;700;900&family=Alegreya+Sans:wght@400;500;700&family=Noto+Sans+Runic&display=swap"><style>
+:root{--bg:#0c0a08;--fg:#ebe1c9;--muted:#a69779;--card:#17130f;--line:#3a3026;--gold:#d4a73a;--gold2:#f3d27a;--red:#b0151c;--blood:#e5483f;--ember:#e2541b;--ink:#070605;--onink:#ebe1c9;color-scheme:dark;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px));background:var(--bg)}
+body{margin:0;color:var(--fg);font:18px/1.65 "Alegreya Sans",system-ui,sans-serif;background:radial-gradient(ellipse 90% 50% at 50% 0,rgba(226,84,27,.07),transparent 70%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .9  0 0 0 0 .8  0 0 0 0 .6  .14 0 0 0 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),var(--bg)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--ink);z-index:10}
+h1,h2,h3{font-family:"Cinzel",Georgia,serif;font-weight:700;line-height:1.1;margin:0;letter-spacing:.03em}
+a{color:inherit}
+.lead a,.empty a{color:var(--gold);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--ember);outline-offset:3px}
+::selection{background:var(--red);color:#fff}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:linear-gradient(#0a0807,#15110d);color:var(--onink);border-bottom:1px solid var(--line);box-shadow:0 1px 0 rgba(212,167,58,.18),0 10px 30px rgba(0,0,0,.55)}
+nav{max-width:1100px;margin:auto;padding:12px 20px;display:flex;gap:6px 22px;align-items:center;flex-wrap:wrap}
+nav b{font-family:"Cinzel Decorative","Cinzel",serif;font-weight:900;color:var(--gold);margin-right:auto;font-size:20px;display:flex;align-items:center;gap:10px;letter-spacing:.02em}
+nav b::before{content:"";width:22px;height:22px;flex:none;background:radial-gradient(circle,#c81e25 0 17%,#0c0a08 18% 33%,#d4a73a 34% 43%,#0c0a08 44% 62%,#c81e25 63% 72%,transparent 73%);border-radius:50%;box-shadow:0 0 0 1px rgba(212,167,58,.5)}
+nav a{text-decoration:none;font-family:"Cinzel",serif;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.14em;opacity:.8;transition:color .2s,opacity .2s}
+nav a:hover{opacity:1;color:var(--gold2)}
+section{max-width:1100px;margin:auto;padding:84px 20px}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 76% 50%,rgba(226,84,27,.24),transparent 45%),radial-gradient(ellipse 80% 60% at 50% 120%,rgba(176,21,28,.35),transparent 70%),linear-gradient(#070605,#0f0c0a);color:var(--onink);max-width:none;padding:0;border-bottom:1px solid var(--line)}
+.hero::before{content:"";position:absolute;width:1500px;height:1500px;right:-480px;top:50%;transform:translateY(-50%);border-radius:50%;pointer-events:none;
+background:repeating-radial-gradient(circle,transparent 0 124px,rgba(212,167,58,.09) 125px 127px),repeating-conic-gradient(from -9deg,rgba(212,167,58,.06) 0 18deg,transparent 18deg 36deg);
+-webkit-mask:radial-gradient(circle,#000 0 25%,transparent 68%);mask:radial-gradient(circle,#000 0 25%,transparent 68%)}
+.hero::after{content:"";position:absolute;inset:auto 0 0;height:120px;background:linear-gradient(transparent,rgba(7,6,5,.85));pointer-events:none}
+.hero>div{position:relative;z-index:1;max-width:1100px;margin:auto;padding:90px 20px 110px;display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+.kicker{font-family:"Noto Sans Runic",sans-serif;color:var(--gold);opacity:.7;letter-spacing:.45em;font-size:15px;margin:0 0 18px}
+.hero h1{font-family:"Cinzel Decorative","Cinzel",serif;font-weight:900;font-size:clamp(42px,6.6vw,84px);line-height:1.04;margin-bottom:34px;letter-spacing:.01em;
+background:linear-gradient(180deg,#fff0bd 0%,#f3d27a 30%,#c8952c 62%,#7d5a1c 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+filter:drop-shadow(0 3px 0 #000) drop-shadow(0 0 28px rgba(226,84,27,.35))}
+.hero h1::after{content:"";display:block;width:min(100%,340px);height:16px;margin-top:22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 230 16'%3E%3Cdefs%3E%3ClinearGradient id='g'%3E%3Cstop offset='0' stop-color='%23d4a73a' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23d4a73a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0 8H152' stroke='url(%23g)' stroke-width='2'/%3E%3Cpath d='M150 1l16 7-16 7 5-7z' fill='%23b0151c'/%3E%3Cpath d='M150 8h12' stroke='%23e2541b' stroke-width='1'/%3E%3Crect x='164' y='7' width='16' height='2' fill='%23d4a73a'/%3E%3Crect x='179' y='4.5' width='28' height='7' rx='2' fill='%23cfc7b6'/%3E%3Cpath d='M184 4.5v7M189 4.5v7M194 4.5v7M199 4.5v7' stroke='%235a524a' stroke-width='1'/%3E%3Cpath d='M207 6.3L230 8l-23 1.7z' fill='%23efe9dc'/%3E%3C/svg%3E") left center/contain no-repeat}
+.logo{position:relative;isolation:isolate;width:min(100%,430px);aspect-ratio:1;margin:46px auto;border-radius:50%;display:grid;place-items:center;
+background:radial-gradient(circle closest-side,#f3e7c8 0 60%,#dcc797 100%);box-shadow:0 0 0 6px var(--gold),0 0 0 11px #0c0a08,0 30px 90px rgba(0,0,0,.8),0 0 120px rgba(226,84,27,.25)}
+.logo::before{content:"";position:absolute;inset:-36px;z-index:-1;border-radius:50%;background:repeating-conic-gradient(from -9deg,#a3121a 0 18deg,#14110e 18deg 36deg);
+-webkit-mask:radial-gradient(circle closest-side,transparent calc(100% - 22px),#000 calc(100% - 21px));mask:radial-gradient(circle closest-side,transparent calc(100% - 22px),#000 calc(100% - 21px))}
+.logo::after{content:"";position:absolute;inset:-44px;border-radius:50%;border:3px dotted rgba(212,167,58,.55);pointer-events:none}
+.logo img{width:90%;display:block;mix-blend-mode:multiply}
+.btn{display:inline-block;padding:14px 26px;background:linear-gradient(#cf2129,#8a0f14);color:#fbe9c0;font-family:"Cinzel",serif;font-weight:700;font-size:15px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;margin:0 12px 12px 0;
+clip-path:polygon(12px 0,calc(100% - 12px) 0,100% 50%,calc(100% - 12px) 100%,12px 100%,0 50%);transition:filter .2s,transform .2s}
+.btn:hover{filter:brightness(1.2);transform:translateY(-2px)}
+.btn.alt{background:linear-gradient(#d4a73a,#8a6420);color:#120f0c}
+h2{font-size:clamp(28px,4.2vw,44px);font-weight:900;text-transform:uppercase;margin-bottom:30px;letter-spacing:.06em;
+background:linear-gradient(180deg,#f7e0a0,#d4a73a 55%,#8a6420);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2::after{content:"";display:block;width:230px;height:16px;margin-top:12px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 230 16'%3E%3Cdefs%3E%3ClinearGradient id='g'%3E%3Cstop offset='0' stop-color='%23d4a73a' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23d4a73a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0 8H152' stroke='url(%23g)' stroke-width='2'/%3E%3Cpath d='M150 1l16 7-16 7 5-7z' fill='%23b0151c'/%3E%3Cpath d='M150 8h12' stroke='%23e2541b' stroke-width='1'/%3E%3Crect x='164' y='7' width='16' height='2' fill='%23d4a73a'/%3E%3Crect x='179' y='4.5' width='28' height='7' rx='2' fill='%23cfc7b6'/%3E%3Cpath d='M184 4.5v7M189 4.5v7M194 4.5v7M199 4.5v7' stroke='%235a524a' stroke-width='1'/%3E%3Cpath d='M207 6.3L230 8l-23 1.7z' fill='%23efe9dc'/%3E%3C/svg%3E") left center/contain no-repeat}
+.lead{color:var(--muted);max-width:60ch;margin:-8px 0 32px}
+.teams{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.team{position:relative;overflow:hidden;background:linear-gradient(160deg,#231c15,#110e0b);border:1px solid var(--line);border-top:3px solid var(--gold);padding:28px 24px 26px;border-radius:3px;transition:transform .25s,box-shadow .25s}
+.team:first-child{border-top-color:var(--red)}
+.team::before{content:attr(data-r);position:absolute;right:6px;bottom:-34px;font:140px/1 "Noto Sans Runic",sans-serif;color:rgba(212,167,58,.07);pointer-events:none;transition:color .25s}
+.team::after{content:"";position:absolute;top:18px;right:18px;width:30px;height:30px;background:radial-gradient(circle,#c81e25 0 17%,#0c0a08 18% 33%,#d4a73a 34% 43%,#0c0a08 44% 62%,#c81e25 63% 72%,transparent 73%);border-radius:50%;opacity:.85}
+.team:hover{transform:translateY(-4px);box-shadow:0 0 0 1px rgba(212,167,58,.6),0 20px 44px rgba(0,0,0,.6),0 0 46px rgba(226,84,27,.16)}
+.team:hover::before{color:rgba(226,84,27,.16)}
+.team h3{font-size:22px;margin:0 40px 10px 0;color:var(--fg)}
+.team span{font-family:"Cinzel",serif;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--gold)}
+.teams{align-items:start}
+.team summary{list-style:none;cursor:pointer}
+.team summary::-webkit-details-marker{display:none}
+.team summary em{display:block;margin-top:14px;font:600 13px "Alegreya Sans",sans-serif;font-style:normal;color:var(--muted);letter-spacing:.04em}
+.team summary em::after{content:" ▾";color:var(--gold)}
+.team[open] summary em{font-size:0}.team[open] summary em::before{content:"Sakrij igrače";font-size:13px}
+.team[open] summary em::after{content:" ▴";font-size:13px}
+.team ul{list-style:none;margin:16px 0 0;padding:14px 0 0;border-top:1px solid var(--line);position:relative;z-index:1}
+.team li{padding:5px 0 5px 22px;position:relative;color:var(--fg)}
+.team li::before{content:"";position:absolute;left:2px;top:50%;width:9px;height:9px;margin-top:-4px;background:var(--gold);transform:rotate(45deg);opacity:.75}
+.team[open]{border-top-color:var(--ember)}
+.band{position:relative;background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.2)),#100d0a;max-width:none;border-block:1px solid var(--line);box-shadow:inset 0 1px 0 rgba(212,167,58,.08),inset 0 -1px 0 rgba(212,167,58,.08)}
+.band>div{max-width:1100px;margin:auto;padding:0 20px}
+.band>div>h2[style]{margin-top:72px!important}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.two b{color:var(--gold);font-family:"Cinzel",serif;letter-spacing:.04em}
+.box{position:relative;border:1px solid var(--line);border-radius:3px;padding:30px;min-height:140px;
+background:radial-gradient(circle at 12px 12px,#8a7550 0 3px,transparent 4px),radial-gradient(circle at calc(100% - 12px) 12px,#8a7550 0 3px,transparent 4px),radial-gradient(circle at 12px calc(100% - 12px),#8a7550 0 3px,transparent 4px),radial-gradient(circle at calc(100% - 12px) calc(100% - 12px),#8a7550 0 3px,transparent 4px),linear-gradient(160deg,#1d1813,#100d0a)}
+.box h3{font-size:22px;margin-bottom:10px;color:var(--gold)}
+.m{position:relative;display:flex;gap:6px 14px;flex-wrap:wrap;justify-content:space-between;padding:15px 6px 15px 32px;border-bottom:1px solid var(--line);transition:background .2s}
+.m::before{content:"";position:absolute;left:4px;top:19px;width:16px;height:16px;background:radial-gradient(circle,#c81e25 0 17%,#0c0a08 18% 33%,#d4a73a 34% 43%,#0c0a08 44% 62%,#c81e25 63% 72%,transparent 73%);border-radius:50%}
+.m:hover{background:rgba(212,167,58,.05)}
+.m.mw,.m.ml{margin-bottom:6px;border:1px solid;border-left-width:3px;border-radius:2px}
+.m.mw{background:linear-gradient(90deg,rgba(110,160,70,.17),rgba(110,160,70,.05) 70%);border-color:rgba(130,180,90,.22);border-left-color:#7fae55}
+.m.ml{background:linear-gradient(90deg,rgba(200,40,40,.17),rgba(200,40,40,.05) 70%);border-color:rgba(229,72,63,.22);border-left-color:#c23a33}
+.m.mw:hover{background:linear-gradient(90deg,rgba(110,160,70,.24),rgba(110,160,70,.08) 70%)}
+.m.ml:hover{background:linear-gradient(90deg,rgba(200,40,40,.24),rgba(200,40,40,.08) 70%)}
+.m b{color:var(--gold2)}
+.m>span:last-child{color:var(--muted)}
+.cd{font-family:"Cinzel",serif;color:var(--ember);font-size:28px}
+.empty{color:var(--muted)}
+footer{background:var(--ink);color:var(--muted);text-align:center;padding:28px 20px 40px;border-top:1px solid var(--line);font-size:15px}
+footer a{color:var(--gold)}
+.runes{font-family:"Noto Sans Runic",sans-serif;color:var(--gold);opacity:.35;letter-spacing:.7em;font-size:16px;text-align:center;white-space:nowrap;overflow:hidden;padding:16px 0;user-select:none}
+footer .runes{padding:0 0 18px}
+@media (max-width:760px){.hero>div{grid-template-columns:1fr;padding:56px 20px 80px;gap:20px}.logo{order:-1;width:min(74vw,400px)}.hero::before{right:-900px;top:20%}}
+#intro{position:fixed;inset:0;z-index:100;cursor:pointer;overflow:hidden;animation:inFade .5s ease-out}
+#intro .s{position:absolute;inset:0;background-color:transparent;background-repeat:no-repeat;background-position:center;background-size:min(88vw,760px) auto,100% 100%;background-blend-mode:multiply;will-change:transform,opacity}
+#intro.go .s{transform:translate(var(--x),var(--y)) rotate(var(--r));opacity:0;transition:transform 1s cubic-bezier(.6,0,.9,.5) var(--d),opacity .35s linear calc(var(--d) + .65s)}
+@keyframes inFade{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}#intro{display:none}.team,.btn{transition:none}}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.tabs button{font:700 14px "Cinzel",serif;letter-spacing:.06em;padding:10px 16px;border-radius:2px;border:1px solid var(--line);background:linear-gradient(#211b15,#14100c);color:var(--fg);cursor:pointer;transition:border-color .2s}
+.tabs button:hover{border-color:var(--gold)}
+.tabs button[aria-pressed="true"]{background:linear-gradient(#cf2129,#8a0f14);border-color:var(--ember);color:#fbe9c0}
+.scroll{overflow-x:auto}
+.lg{font-size:20px;color:var(--gold);text-transform:uppercase;letter-spacing:.12em;margin:6px 0 14px}
+table{border-collapse:collapse;width:100%;min-width:420px}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line)}
+th{font:700 12px "Cinzel",serif;text-transform:uppercase;letter-spacing:.14em;color:var(--gold);border-bottom:2px solid var(--gold)}
+tbody tr:hover td{background:rgba(212,167,58,.05)}
+tr.me td{background:linear-gradient(90deg,rgba(176,21,28,.9),rgba(176,21,28,.55));color:#fff1cf;font-weight:700}
+.w{color:#9cc96b;font-weight:700}.l{color:var(--blood);font-weight:700}
+.social{margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}
+.social h3{font-size:22px;margin-bottom:16px;color:var(--gold)}
+.social a{display:inline-flex;align-items:center;gap:10px;padding:11px 18px;margin:0 10px 10px 0;border:1px solid var(--gold);border-radius:2px;background:#15110d;font-family:"Cinzel",serif;font-weight:700;letter-spacing:.06em;text-decoration:none;color:var(--fg);transition:background .2s,color .2s}
+.social a:hover{background:var(--gold);color:#120f0c}
+.social svg{width:22px;height:22px}
+.video{position:relative;aspect-ratio:16/9;background:#000;border-radius:2px;overflow:hidden;border:3px solid var(--gold);box-shadow:0 0 0 6px #0c0a08,0 0 0 7px var(--line),0 24px 70px rgba(0,0,0,.7),0 0 60px rgba(226,84,27,.18)}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.onair{display:flex;align-items:center;gap:10px;font-family:"Cinzel",serif;font-weight:700;letter-spacing:.08em;color:var(--blood);margin:0 0 16px}
+.onair span,nav a.lv::before{width:12px;height:12px;border-radius:50%;background:var(--blood);animation:pulse 1.4s infinite;box-shadow:0 0 10px var(--blood)}
+nav a.lv::before{content:"";display:inline-block;width:8px;height:8px;margin-right:6px;vertical-align:middle}
+@keyframes pulse{50%{opacity:.3}}
+.dw{position:fixed;left:0;z-index:8;pointer-events:none;width:64px;will-change:transform}
+.dw i{display:block;width:max-content;margin:0 0 2px;position:relative;left:50%;transform:translateX(-50%);white-space:nowrap;padding:1px 8px;font:700 12px "Cinzel",serif;letter-spacing:.1em;color:var(--gold2);background:rgba(12,10,8,.85);border:1px solid var(--gold);border-radius:2px;font-style:normal;text-shadow:0 1px 0 #000}
+.dw svg{display:block;width:64px;height:auto;filter:drop-shadow(0 4px 3px rgba(0,0,0,.6));animation:dwb .32s ease-in-out infinite alternate}
+.dw.lt svg{transform:scaleX(-1)}
+.dw .g1,.dw .g2{transform-box:fill-box;transform-origin:50% 0;animation:dwl .32s ease-in-out infinite alternate}
+.dw .g2{animation-direction:alternate-reverse}
+@keyframes dwl{from{transform:rotate(-28deg)}to{transform:rotate(28deg)}}
+@keyframes dwb{to{translate:0 -3px}}
+.dw.tk{pointer-events:auto;cursor:pointer}
+.dw.st svg,.dw.st .g1,.dw.st .g2{animation-play-state:paused}
+.dw b{position:absolute;bottom:100%;left:50%;margin-bottom:8px;transform:translateX(calc(-50% + var(--sx,0px)));width:max-content;max-width:min(240px,80vw);padding:7px 11px;font:600 13px/1.35 system-ui,sans-serif;color:#1a120b;background:#f3e6c8;border:2px solid var(--gold);border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,.5);text-align:center;animation:bub .2s ease-out}
+.dw b::after{content:"";position:absolute;top:100%;left:calc(50% - var(--sx,0px));margin-left:-7px;border:7px solid transparent;border-top-color:var(--gold)}
+@keyframes bub{from{opacity:0;scale:.6}}
+
+.big{font-family:"Cinzel",serif;font-weight:900;font-size:clamp(30px,6vw,54px);line-height:1.1;margin:0 0 10px;letter-spacing:.03em;
+background:linear-gradient(180deg,#ffc27a,#e2541b 55%,#9b1015);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(226,84,27,.4))}
+/* Statistika i H2H */
+.stats-controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:14px;margin:24px 0}
+.stats-controls label{font-size:14px;font-weight:600;display:block;margin-bottom:5px}
+.stats-controls select,.stats-controls input{font:inherit;color:var(--fg);background:var(--card);border:2px solid var(--line);border-radius:7px;padding:11px;width:100%;min-width:0}
+.stats-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:20px 0 25px}
+.stats-card{border:2px solid var(--line);background:var(--card);border-radius:8px;padding:18px}
+.stats-card strong{font-family:'Alfa Slab One',Georgia,serif;font-size:30px;font-weight:400;display:block;line-height:1.4}
+.stats-card small{color:var(--muted)}
+.stats-note{font-size:14px;color:var(--muted);margin:12px 0 20px}
+.stats-table{min-width:760px}.stats-table td,.stats-table th{padding:10px 12px}
+.stats-pagination{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin:18px 0}
+.stats-pagination button{border:2px solid var(--line);border-radius:6px;padding:9px 16px;background:var(--card);color:var(--fg);font:inherit;font-weight:600;cursor:pointer}
+.stats-pagination button:disabled{opacity:.4;cursor:default}
+.stats-winner{color:#1c7c3a;font-weight:600}.stats-loser{color:var(--red);font-weight:600}
+.stats-filter-title{margin:30px 0 8px;font-size:22px}
+
+
+/* H2H tablica i filtriranje protivničkih klubova */
+.stats-h2h-table{min-width:540px}
+.stats-h2h-table tbody tr{cursor:pointer}
+.stats-h2h-table tbody tr:hover td{background:rgba(212,167,58,.14)}
+.stats-h2h-table tbody tr:focus{outline:2px solid var(--gold);outline-offset:-2px}
+.stats-h2h-table .h2h-record{font-weight:700;color:var(--gold2)}
+.stats-h2h-table .h2h-record small{font-weight:400;color:var(--muted)}
+.stats-h2h-table td small{color:var(--muted)}
+
+/* Samostalna statistika */
+.stats-page{padding-top:62px;min-height:75vh}
+.stats-page .stats-back{display:inline-block;margin-bottom:28px;color:var(--gold2);text-decoration:none}
+nav a[aria-current="page"]{color:var(--gold2);opacity:1;border-bottom:2px solid var(--gold)}
+@media(max-width:650px){.stats-page{padding-top:36px}.stats-controls{grid-template-columns:1fr}.stats-filter-title{font-size:19px}}
+</style></head><body><header><nav><b>PK Knežija</b><a href="index.html">Početna</a><a href="index.html#ekipe">Ekipe</a><a href="index.html#liga">Liga</a><a href="statistika.html" aria-current="page">Statistika / H2H</a><a href="index.html#uzivo">Uživo</a><a href="index.html#kontakt">Kontakt</a></nav></header><main><section id="statistika" class="stats-page"><a class="stats-back" href="index.html">← Povratak na početnu</a>
+<h2>Statistika i H2H</h2>
+<p class="lead">Pregled svih zabilježenih pojedinačnih mečeva PK Knežija. Odaberi igrača, pregledaj rezultate i usporedi međusobne susrete protiv bilo kojeg protivnika.</p>
+<div class="stats-controls">
+ <div><label for="stat-player">Igrač Knežije</label><select id="stat-player"><option value="">Učitavam igrače…</option></select></div>
+ <div><label for="stat-opponent">H2H – protivnik</label><select id="stat-opponent"><option value="">Svi protivnici</option></select></div>
+ <div><label for="stat-club">Protivnički klub</label><select id="stat-club"><option value="">Svi klubovi</option></select></div>
+ <div><label for="stat-season">Sezona</label><select id="stat-season"><option value="">Sve sezone</option></select></div>
+ <div><label for="stat-search">Pretraži klub / protivnika</label><input id="stat-search" type="search" placeholder="Ime ili klub…"></div>
+</div>
+<div id="stat-summary" class="stats-cards" aria-live="polite"><p>Učitavam statistiku…</p></div>
+<p id="stat-description" class="stats-note"></p>
+<div id="stat-h2h-wrap">
+<h3 class="stats-filter-title">H2H – omjer protiv svih protivnika</h3>
+<p class="stats-note">Protivnici su poredani prema broju međusobnih mečeva, od najviše prema najmanje. Klikni protivnika za detaljnu povijest.</p>
+<div class="scroll"><table class="stats-table stats-h2h-table"><thead><tr><th>Protivnik / klub</th><th>Mečeva</th><th>Pobjede / porazi</th><th>Uspješnost</th></tr></thead><tbody id="stat-h2h-rows"></tbody></table></div>
+</div>
+<h3 class="stats-filter-title">Povijest mečeva</h3>
+<div class="scroll"><table class="stats-table"><thead><tr><th>Datum</th><th>Sezona</th><th>Liga</th><th>Protivnik / klub</th><th>Rezultat</th><th>Ishod</th><th>Ekipa</th></tr></thead><tbody id="stat-rows"><tr><td colspan="7">Učitavam…</td></tr></tbody></table></div>
+<div class="stats-pagination"><span id="stat-count" class="stats-note"></span><div><button id="stat-prev" type="button">← Prethodna</button> <button id="stat-next" type="button">Sljedeća →</button></div></div>
+<p class="stats-note">Izvor: klupska Excel tablica, list „MAIN baza”. Statistika se ažurira učitavanjem nove datoteke matches.json. Neriješeni mečevi računaju se zasebno.</p>
+</section>
+</main><footer>© <span id="y"></span> Pikado klub Knežija · <a href="mailto:pkknezija@gmail.com">pkknezija@gmail.com</a></footer><script>document.getElementById("y").textContent=new Date().getFullYear();</script><script>
+(function(){
+'use strict';
+var all=[],page=0,size=25;
+var player=document.getElementById('stat-player'),opp=document.getElementById('stat-opponent'),club=document.getElementById('stat-club'),season=document.getElementById('stat-season'),search=document.getElementById('stat-search');
+var rows=document.getElementById('stat-rows'),summary=document.getElementById('stat-summary'),description=document.getElementById('stat-description'),count=document.getElementById('stat-count'),h2hWrap=document.getElementById('stat-h2h-wrap'),h2hRows=document.getElementById('stat-h2h-rows');
+function e(v){var d=document.createElement('div');d.textContent=String(v==null?'':v);return d.innerHTML}
+function key(v){return String(v||'').trim().toLocaleLowerCase('hr')}
+function opt(sel,values,first){sel.innerHTML='<option value="">'+e(first)+'</option>'+values.map(function(s){return '<option value="'+e(s).replace(/"/g,'&quot;')+'">'+e(s)+'</option>'}).join('')}
+function seasonKey(v){var m=String(v).match(/^\d{4}/);return m?Number(m[0]):0}
+function baseMatches(){var p=key(player.value);return all.filter(function(r){return key(r.p)===p&&(!season.value||r.s===season.value)})}
+function selectedMatches(){var o=key(opp.value),c=key(club.value),q=key(search.value);return baseMatches().filter(function(r){return (!o||key(r.o)===o)&&(!c||key(r.c)===c)&&(!q||key(r.o+' '+r.c).includes(q))})}
+function updateClubs(){var previous=club.value;var items=Array.from(new Set(baseMatches().map(function(r){return r.c}).filter(Boolean))).sort(function(a,b){return a.localeCompare(b,'hr')});opt(club,items,'Svi klubovi');if(items.includes(previous))club.value=previous}
+function updateOpp(){var previous=opp.value,c=key(club.value),pool=baseMatches().filter(function(r){return !c||key(r.c)===c});var names=Array.from(new Set(pool.map(function(r){return r.o}).filter(Boolean))).sort(function(a,b){return a.localeCompare(b,'hr')});opt(opp,names,'Svi protivnici');if(names.includes(previous))opp.value=previous}
+function card(label,value){return '<div class="stats-card"><strong>'+e(value)+'</strong><small>'+e(label)+'</small></div>'}
+function outcome(r){return r.a>r.b?1:r.a<r.b?-1:0}
+function renderH2H(data){h2hWrap.hidden=Boolean(opp.value);if(opp.value)return;
+ var stats=new Map();data.forEach(function(r){var id=key(r.o);if(!stats.has(id))stats.set(id,{name:r.o,clubs:new Set(),total:0,w:0,l:0,t:0});var v=stats.get(id);v.total++;v.clubs.add(r.c);var result=outcome(r);if(result>0)v.w++;else if(result<0)v.l++;else v.t++});
+ var grouped=Array.from(stats.values()).sort(function(a,b){return b.total-a.total||b.w-a.w||a.name.localeCompare(b.name,'hr')});
+ h2hRows.innerHTML=grouped.map(function(v){var pct=v.w+v.l?((100*v.w/(v.w+v.l)).toLocaleString('hr-HR',{maximumFractionDigits:1})+' %'):'—';return '<tr tabindex="0" role="button" aria-label="Pokaži mečeve protiv '+e(v.name)+'" data-opponent="'+e(v.name).replace(/"/g,'&quot;')+'"><td><b>'+e(v.name)+'</b><br><small>'+e(Array.from(v.clubs).filter(Boolean).sort().join(', '))+'</small></td><td><strong>'+v.total+'</strong></td><td class="h2h-record">'+v.w+' / '+v.l+(v.t?' <small>(+'+v.t+' neriješenih)</small>':'')+'</td><td>'+pct+'</td></tr>'}).join('')||'<tr><td colspan="4">Nema protivnika za odabrane filtre.</td></tr>';
+}
+function render(){var data=selectedMatches().sort(function(a,b){return (b.d||'').localeCompare(a.d||'')||String(b.m).localeCompare(String(a.m))});var wins=data.filter(function(r){return outcome(r)>0}).length,losses=data.filter(function(r){return outcome(r)<0}).length,ties=data.length-wins-losses,legsA=data.reduce(function(v,r){return v+r.a},0),legsB=data.reduce(function(v,r){return v+r.b},0);var pct=(wins+losses)?(100*wins/(wins+losses)).toLocaleString('hr-HR',{maximumFractionDigits:1})+' %':'—';summary.innerHTML=card('Odigrano mečeva',data.length)+card('Pobjede',wins)+card('Porazi',losses)+card('Uspješnost',pct)+card('Legovi',legsA+' : '+legsB)+(ties?card('Izjednačeni / za provjeru',ties):'');description.textContent=(opp.value?'H2H: '+player.value+' protiv '+opp.value:'Svi protivnici igrača '+player.value)+(club.value?' · Klub: '+club.value:'')+(season.value?' · Sezona: '+season.value:'');renderH2H(data);
+ var totalPages=Math.max(1,Math.ceil(data.length/size));page=Math.max(0,Math.min(page,totalPages-1));var shown=data.slice(page*size,(page+1)*size);rows.innerHTML=shown.map(function(r){var result=outcome(r)>0?'Pobjeda':outcome(r)<0?'Poraz':'Neodlučeno';var cls=outcome(r)>0?'stats-winner':outcome(r)<0?'stats-loser':'';return '<tr><td>'+e(r.d?new Date(r.d+'T12:00:00').toLocaleDateString('hr-HR'):'—')+'</td><td>'+e(r.s)+'</td><td>'+e(r.l||'—')+'</td><td><b>'+e(r.o)+'</b><br><small>'+e(r.c)+'</small></td><td><strong>'+e(r.a+' : '+r.b)+'</strong></td><td class="'+cls+'">'+result+'</td><td>'+e(r.t)+'</td></tr>'}).join('')||'<tr><td colspan="7">Nema mečeva za odabrane filtre.</td></tr>';count.textContent=data.length?'Prikaz '+(page*size+1)+'–'+Math.min((page+1)*size,data.length)+' od '+data.length+' mečeva':'0 mečeva';document.getElementById('stat-prev').disabled=page===0;document.getElementById('stat-next').disabled=page>=totalPages-1;
+}
+player.addEventListener('change',function(){page=0;opp.value='';club.value='';updateClubs();updateOpp();render()});season.addEventListener('change',function(){page=0;updateClubs();updateOpp();render()});club.addEventListener('change',function(){page=0;updateOpp();render()});opp.addEventListener('change',function(){page=0;render()});search.addEventListener('input',function(){page=0;render()});document.getElementById('stat-prev').addEventListener('click',function(){page--;render()});document.getElementById('stat-next').addEventListener('click',function(){page++;render()});
+function chooseOpponent(target){var el=target.closest('tr[data-opponent]');if(!el)return;opp.value=el.getAttribute('data-opponent');page=0;render();document.getElementById('stat-rows').closest('table').scrollIntoView({behavior:'smooth',block:'start'})}
+h2hRows.addEventListener('click',function(ev){chooseOpponent(ev.target)});h2hRows.addEventListener('keydown',function(ev){if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();chooseOpponent(ev.target)}});
+fetch('matches.json').then(function(r){if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(function(data){all=data;var players=Array.from(new Set(all.map(function(r){return r.p}))).sort(function(a,b){return a.localeCompare(b,'hr')});var seasons=Array.from(new Set(all.map(function(r){return r.s}).filter(Boolean))).sort(function(a,b){return seasonKey(b)-seasonKey(a)||b.localeCompare(a)});opt(player,players,'Odaberi igrača');opt(season,seasons,'Sve sezone');if(players.length){player.value=players[0];updateClubs();updateOpp();render()}else{summary.textContent='Nema podataka o mečevima.'}}).catch(function(error){summary.textContent='Nije moguće učitati statistiku. Provjeri je li matches.json postavljen uz index.html.';rows.innerHTML='<tr><td colspan="7">Greška učitavanja podataka.</td></tr>';console.error('Statistika:',error)});
+})();
+</script></body></html>
