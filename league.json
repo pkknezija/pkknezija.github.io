@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T09:04:21.978Z",
+  "updated": "2026-11-06T21:48:19.795Z",
   "teams": [
     {
       "name": "KNEŽIJA DRINKING DWARVES",
@@ -334,14 +334,14 @@
         {
           "pos": 1,
           "name": "BULLDOG CBM",
-          "pts": 18,
-          "played": 6
+          "pts": 21,
+          "played": 7
         },
         {
           "pos": 2,
           "name": "KNEŽIJA UNITED",
-          "pts": 16,
-          "played": 6
+          "pts": 19,
+          "played": 7
         },
         {
           "pos": 3,
@@ -357,25 +357,25 @@
         },
         {
           "pos": 5,
-          "name": "KOCKA APEX",
+          "name": "MOZART GENTLEMEN",
           "pts": 9,
           "played": 7
         },
         {
           "pos": 6,
-          "name": "MOZART GENTLEMEN",
-          "pts": 7,
-          "played": 6
+          "name": "KOCKA APEX",
+          "pts": 9,
+          "played": 8
         },
         {
           "pos": 7,
-          "name": "CB X",
-          "pts": 7,
-          "played": 7
+          "name": "MAK DARTS",
+          "pts": 8,
+          "played": 8
         },
         {
           "pos": 8,
-          "name": "MAK DARTS",
+          "name": "CB X",
           "pts": 7,
           "played": 7
         },
@@ -389,7 +389,7 @@
           "pos": 10,
           "name": "BLACK M 2",
           "pts": 6,
-          "played": 6
+          "played": 7
         },
         {
           "pos": 11,
@@ -457,9 +457,9 @@
           "round": 8,
           "home": "KNEŽIJA UNITED",
           "away": "BLACK M 2",
-          "hs": 0,
-          "as": 0,
-          "played": false,
+          "hs": 12,
+          "as": 4,
+          "played": true,
           "date": "2026-11-06T19:00:00+01:00"
         },
         {
@@ -595,25 +595,25 @@
           "pos": 2,
           "name": "VIZITA",
           "pts": 18,
-          "played": 6
+          "played": 7
         },
         {
           "pos": 3,
-          "name": "MOZART DUBRAVA",
-          "pts": 13,
+          "name": "FAKINI KNEŽIJA",
+          "pts": 16,
           "played": 7
         },
         {
           "pos": 4,
-          "name": "FAKINI KNEŽIJA",
-          "pts": 13,
-          "played": 6
+          "name": "HOLLYWOOD T1",
+          "pts": 15,
+          "played": 7
         },
         {
           "pos": 5,
-          "name": "HOLLYWOOD T1",
-          "pts": 12,
-          "played": 6
+          "name": "MOZART DUBRAVA",
+          "pts": 13,
+          "played": 7
         },
         {
           "pos": 6,
@@ -625,7 +625,7 @@
           "pos": 7,
           "name": "BILLIONAIRES 3 PROMILA",
           "pts": 7,
-          "played": 6
+          "played": 7
         },
         {
           "pos": 8,
@@ -711,9 +711,9 @@
           "round": 8,
           "home": "VIZITA",
           "away": "FAKINI KNEŽIJA",
-          "hs": 0,
-          "as": 0,
-          "played": false,
+          "hs": 7,
+          "as": 9,
+          "played": true,
           "date": "2026-11-06T19:00:00+01:00"
         },
         {
