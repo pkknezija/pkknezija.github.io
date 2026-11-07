@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T21:48:19.795Z",
+  "updated": "2026-11-07T01:20:07.748Z",
   "teams": [
     {
       "name": "KNEŽIJA DRINKING DWARVES",
@@ -346,8 +346,8 @@
         {
           "pos": 3,
           "name": "IPA ZAGREB 3",
-          "pts": 12,
-          "played": 6
+          "pts": 15,
+          "played": 7
         },
         {
           "pos": 4,
@@ -383,7 +383,7 @@
           "pos": 9,
           "name": "BILLIONAIRES CASPER",
           "pts": 7,
-          "played": 6
+          "played": 7
         },
         {
           "pos": 10,
@@ -617,39 +617,39 @@
         },
         {
           "pos": 6,
+          "name": "DINAMO ZG",
+          "pts": 8,
+          "played": 7
+        },
+        {
+          "pos": 7,
           "name": "JANJE TEAM",
           "pts": 8,
           "played": 6
         },
         {
-          "pos": 7,
+          "pos": 8,
           "name": "BILLIONAIRES 3 PROMILA",
           "pts": 7,
           "played": 7
         },
         {
-          "pos": 8,
-          "name": "DINAMO ZG",
-          "pts": 7,
-          "played": 6
-        },
-        {
           "pos": 9,
           "name": "QUATTRO SOPNICA",
-          "pts": 5,
-          "played": 6
+          "pts": 6,
+          "played": 7
         },
         {
           "pos": 10,
           "name": "KOCKA WARRIORS",
-          "pts": 3,
-          "played": 7
+          "pts": 5,
+          "played": 8
         },
         {
           "pos": 11,
           "name": "ŠARCI GAJNICE",
-          "pts": 0,
-          "played": 7
+          "pts": 2,
+          "played": 8
         }
       ],
       "matches": [
