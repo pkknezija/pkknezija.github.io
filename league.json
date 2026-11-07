@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T01:20:07.748Z",
+  "updated": "2026-11-07T22:41:55.092Z",
   "teams": [
     {
       "name": "KNEŽIJA DRINKING DWARVES",
@@ -588,8 +588,8 @@
         {
           "pos": 1,
           "name": "PK ZAPAD 1",
-          "pts": 19,
-          "played": 7
+          "pts": 20,
+          "played": 8
         },
         {
           "pos": 2,
@@ -617,15 +617,15 @@
         },
         {
           "pos": 6,
-          "name": "DINAMO ZG",
-          "pts": 8,
+          "name": "JANJE TEAM",
+          "pts": 10,
           "played": 7
         },
         {
           "pos": 7,
-          "name": "JANJE TEAM",
+          "name": "DINAMO ZG",
           "pts": 8,
-          "played": 6
+          "played": 7
         },
         {
           "pos": 8,
