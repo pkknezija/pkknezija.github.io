@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T22:41:55.092Z",
+  "updated": "2026-11-12T19:50:59.749Z",
   "teams": [
     {
       "name": "KNEŽIJA DRINKING DWARVES",
@@ -158,9 +158,9 @@
           "round": 8,
           "home": "KNEŽIJA DRINKING DWARVES",
           "away": "DINAMO",
-          "hs": 0,
-          "as": 0,
-          "played": false,
+          "hs": 3,
+          "as": 1,
+          "played": true,
           "date": "2026-11-12T19:00:00+01:00"
         },
         {
