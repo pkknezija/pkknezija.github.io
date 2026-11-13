@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T19:50:59.749Z",
+  "updated": "2026-11-13T00:50:17.203Z",
   "teams": [
     {
       "name": "KNEŽIJA DRINKING DWARVES",
@@ -8,86 +8,86 @@
         {
           "pos": 1,
           "name": "DARTS POINT TEAM BAN",
-          "pts": 21,
-          "played": 7
+          "pts": 24,
+          "played": 8
         },
         {
           "pos": 2,
-          "name": "SESVETE",
-          "pts": 18,
-          "played": 7
+          "name": "IPA ZAGREB",
+          "pts": 21,
+          "played": 8
         },
         {
           "pos": 3,
-          "name": "BILLIONAIRES",
-          "pts": 18,
-          "played": 7
+          "name": "SESVETE",
+          "pts": 21,
+          "played": 8
         },
         {
           "pos": 4,
-          "name": "IPA ZAGREB",
-          "pts": 18,
-          "played": 7
+          "name": "JANJE MIX TEAM",
+          "pts": 20,
+          "played": 8
         },
         {
           "pos": 5,
-          "name": "JANJE MIX TEAM",
-          "pts": 17,
-          "played": 7
+          "name": "BILLIONAIRES",
+          "pts": 18,
+          "played": 8
         },
         {
           "pos": 6,
           "name": "PANDA RAVNICE",
-          "pts": 15,
-          "played": 7
+          "pts": 18,
+          "played": 8
         },
         {
           "pos": 7,
           "name": "A1",
           "pts": 15,
-          "played": 7
+          "played": 8
         },
         {
           "pos": 8,
-          "name": "DC SUNSET",
-          "pts": 7,
-          "played": 7
+          "name": "GOSPOĐE",
+          "pts": 9,
+          "played": 8
         },
         {
           "pos": 9,
-          "name": "AGRAM DARTS TEAM",
-          "pts": 6,
-          "played": 7
+          "name": "DC SUNSET",
+          "pts": 7,
+          "played": 8
         },
         {
           "pos": 10,
-          "name": "GOSPOĐE",
+          "name": "AGRAM DARTS TEAM",
           "pts": 6,
-          "played": 7
+          "played": 8
         },
         {
           "pos": 11,
           "name": "A1 OTPISANI",
           "pts": 3,
-          "played": 7
+          "played": 8
         },
         {
           "pos": 12,
-          "name": "DINAMO",
-          "pts": 2,
-          "played": 7
+          "name": "KNEŽIJA DRINKING DWARVES",
+          "pts": 3,
+          "played": 8
         },
         {
           "pos": 13,
-          "name": "JANJE ORION",
-          "pts": 1,
-          "played": 7
+          "name": "DINAMO",
+          "pts": 2,
+          "played": 8
         },
         {
           "pos": 14,
-          "name": "KNEŽIJA DRINKING DWARVES",
-          "pts": 0,
-          "played": 7
+          "name": "JANJE ORION",
+          "pts": 1,
+          "played": 8
         }
       ],
       "matches": [
@@ -158,8 +158,8 @@
           "round": 8,
           "home": "KNEŽIJA DRINKING DWARVES",
           "away": "DINAMO",
-          "hs": 3,
-          "as": 1,
+          "hs": 9,
+          "as": 7,
           "played": true,
           "date": "2026-11-12T19:00:00+01:00"
         },
