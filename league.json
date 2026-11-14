@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T21:41:38.124Z",
+  "updated": "2026-11-14T01:52:49.143Z",
   "teams": [
     {
       "name": "KNEŽIJA DRINKING DWARVES",
@@ -617,21 +617,21 @@
         },
         {
           "pos": 6,
+          "name": "DINAMO ZG",
+          "pts": 11,
+          "played": 8
+        },
+        {
+          "pos": 7,
           "name": "JANJE TEAM",
           "pts": 10,
           "played": 8
         },
         {
-          "pos": 7,
+          "pos": 8,
           "name": "BILLIONAIRES 3 PROMILA",
           "pts": 9,
           "played": 8
-        },
-        {
-          "pos": 8,
-          "name": "DINAMO ZG",
-          "pts": 8,
-          "played": 7
         },
         {
           "pos": 9,
@@ -649,7 +649,7 @@
           "pos": 11,
           "name": "ŠARCI GAJNICE",
           "pts": 2,
-          "played": 8
+          "played": 9
         }
       ],
       "matches": [
