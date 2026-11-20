@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T01:14:10.270Z",
+  "updated": "2026-11-20T23:19:38.379Z",
   "teams": [
     {
       "name": "KNEŽIJA DRINKING DWARVES",
@@ -334,8 +334,8 @@
         {
           "pos": 1,
           "name": "BULLDOG CBM",
-          "pts": 24,
-          "played": 8
+          "pts": 27,
+          "played": 9
         },
         {
           "pos": 2,
@@ -347,19 +347,19 @@
           "pos": 3,
           "name": "KNEŽIJA UNITED",
           "pts": 19,
-          "played": 8
+          "played": 9
         },
         {
           "pos": 4,
-          "name": "JANJE FENIKS",
-          "pts": 12,
+          "name": "MOZART GENTLEMEN",
+          "pts": 15,
           "played": 9
         },
         {
           "pos": 5,
-          "name": "MOZART GENTLEMEN",
+          "name": "JANJE FENIKS",
           "pts": 12,
-          "played": 8
+          "played": 9
         },
         {
           "pos": 6,
@@ -369,33 +369,33 @@
         },
         {
           "pos": 7,
-          "name": "BLACK M 2",
-          "pts": 9,
-          "played": 8
+          "name": "MAK DARTS",
+          "pts": 11,
+          "played": 9
         },
         {
           "pos": 8,
-          "name": "MAK DARTS",
-          "pts": 8,
-          "played": 8
+          "name": "BILLIONAIRES CASPER",
+          "pts": 10,
+          "played": 9
         },
         {
           "pos": 9,
-          "name": "CB X",
-          "pts": 7,
-          "played": 8
+          "name": "BLACK M 2",
+          "pts": 9,
+          "played": 9
         },
         {
           "pos": 10,
-          "name": "BILLIONAIRES CASPER",
+          "name": "CB X",
           "pts": 7,
-          "played": 8
+          "played": 9
         },
         {
           "pos": 11,
           "name": "SREDNJACI",
           "pts": 4,
-          "played": 9
+          "played": 10
         }
       ],
       "matches": [
@@ -475,9 +475,9 @@
           "round": 10,
           "home": "KNEŽIJA UNITED",
           "away": "BULLDOG CBM",
-          "hs": 0,
-          "as": 0,
-          "played": false,
+          "hs": 5,
+          "as": 11,
+          "played": true,
           "date": "2026-11-20T19:00:00+01:00"
         },
         {
@@ -588,68 +588,68 @@
         {
           "pos": 1,
           "name": "VIZITA",
-          "pts": 21,
-          "played": 8
+          "pts": 22,
+          "played": 9
         },
         {
           "pos": 2,
+          "name": "FAKINI KNEŽIJA",
+          "pts": 21,
+          "played": 9
+        },
+        {
+          "pos": 3,
           "name": "PK ZAPAD 1",
           "pts": 20,
           "played": 9
         },
         {
-          "pos": 3,
-          "name": "FAKINI KNEŽIJA",
-          "pts": 19,
-          "played": 8
-        },
-        {
           "pos": 4,
           "name": "MOZART DUBRAVA",
-          "pts": 16,
-          "played": 8
+          "pts": 18,
+          "played": 9
         },
         {
           "pos": 5,
           "name": "HOLLYWOOD T1",
-          "pts": 15,
-          "played": 8
+          "pts": 18,
+          "played": 9
         },
         {
           "pos": 6,
           "name": "DINAMO ZG",
-          "pts": 11,
-          "played": 8
+          "pts": 14,
+          "played": 9
         },
         {
           "pos": 7,
           "name": "JANJE TEAM",
           "pts": 10,
-          "played": 8
+          "played": 9
         },
         {
           "pos": 8,
           "name": "BILLIONAIRES 3 PROMILA",
           "pts": 9,
-          "played": 8
+          "played": 9
         },
         {
           "pos": 9,
           "name": "QUATTRO SOPNICA",
-          "pts": 7,
-          "played": 8
+          "pts": 8,
+          "played": 9
         },
         {
           "pos": 10,
           "name": "KOCKA WARRIORS",
-          "pts": 5,
-          "played": 8
+          "pts": 8,
+          "played": 9
         },
         {
           "pos": 11,
           "name": "ŠARCI GAJNICE",
           "pts": 2,
-          "played": 9
+          "played": 10
         }
       ],
       "matches": [
@@ -729,9 +729,9 @@
           "round": 10,
           "home": "QUATTRO SOPNICA",
           "away": "FAKINI KNEŽIJA",
-          "hs": 0,
-          "as": 0,
-          "played": false,
+          "hs": 8,
+          "as": 9,
+          "played": true,
           "date": "2026-11-20T19:00:00+01:00"
         },
         {
