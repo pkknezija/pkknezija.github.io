@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T23:19:38.379Z",
+  "updated": "2026-11-23T21:44:36.385Z",
   "teams": [
     {
       "name": "KNEŽIJA DRINKING DWARVES",
@@ -340,8 +340,8 @@
         {
           "pos": 2,
           "name": "IPA ZAGREB 3",
-          "pts": 21,
-          "played": 9
+          "pts": 24,
+          "played": 10
         },
         {
           "pos": 3,
@@ -353,7 +353,7 @@
           "pos": 4,
           "name": "MOZART GENTLEMEN",
           "pts": 15,
-          "played": 9
+          "played": 10
         },
         {
           "pos": 5,
@@ -375,21 +375,21 @@
         },
         {
           "pos": 8,
-          "name": "BILLIONAIRES CASPER",
-          "pts": 10,
-          "played": 9
-        },
-        {
-          "pos": 9,
           "name": "BLACK M 2",
           "pts": 9,
           "played": 9
         },
         {
-          "pos": 10,
+          "pos": 9,
           "name": "CB X",
           "pts": 7,
-          "played": 9
+          "played": 8
+        },
+        {
+          "pos": 10,
+          "name": "BILLIONAIRES CASPER",
+          "pts": 7,
+          "played": 8
         },
         {
           "pos": 11,
