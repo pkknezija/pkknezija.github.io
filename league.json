@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T21:44:36.385Z",
+  "updated": "2026-11-25T01:02:54.118Z",
   "teams": [
     {
       "name": "KNEŽIJA DRINKING DWARVES",
@@ -49,14 +49,14 @@
         },
         {
           "pos": 8,
-          "name": "GOSPOĐE",
-          "pts": 9,
-          "played": 9
+          "name": "DC SUNSET",
+          "pts": 10,
+          "played": 10
         },
         {
           "pos": 9,
-          "name": "DC SUNSET",
-          "pts": 7,
+          "name": "GOSPOĐE",
+          "pts": 9,
           "played": 9
         },
         {
@@ -81,7 +81,7 @@
           "pos": 13,
           "name": "DINAMO",
           "pts": 2,
-          "played": 9
+          "played": 10
         },
         {
           "pos": 14,
