@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T01:02:54.118Z",
+  "updated": "2026-11-26T02:29:52.750Z",
   "teams": [
     {
       "name": "KNEŽIJA DRINKING DWARVES",
@@ -375,21 +375,21 @@
         },
         {
           "pos": 8,
+          "name": "CB X",
+          "pts": 10,
+          "played": 9
+        },
+        {
+          "pos": 9,
           "name": "BLACK M 2",
           "pts": 9,
           "played": 9
         },
         {
-          "pos": 9,
-          "name": "CB X",
-          "pts": 7,
-          "played": 8
-        },
-        {
           "pos": 10,
           "name": "BILLIONAIRES CASPER",
           "pts": 7,
-          "played": 8
+          "played": 9
         },
         {
           "pos": 11,
@@ -624,8 +624,8 @@
         {
           "pos": 7,
           "name": "JANJE TEAM",
-          "pts": 10,
-          "played": 9
+          "pts": 13,
+          "played": 10
         },
         {
           "pos": 8,
@@ -637,7 +637,7 @@
           "pos": 9,
           "name": "QUATTRO SOPNICA",
           "pts": 8,
-          "played": 9
+          "played": 10
         },
         {
           "pos": 10,
