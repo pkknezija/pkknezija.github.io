@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T02:29:52.750Z",
+  "updated": "2026-11-26T20:30:43.913Z",
   "teams": [
     {
       "name": "KNEŽIJA DRINKING DWARVES",
@@ -8,30 +8,30 @@
         {
           "pos": 1,
           "name": "DARTS POINT TEAM BAN",
-          "pts": 27,
-          "played": 9
+          "pts": 30,
+          "played": 10
         },
         {
           "pos": 2,
-          "name": "IPA ZAGREB",
-          "pts": 24,
-          "played": 9
+          "name": "SESVETE",
+          "pts": 27,
+          "played": 10
         },
         {
           "pos": 3,
-          "name": "SESVETE",
-          "pts": 24,
-          "played": 9
+          "name": "IPA ZAGREB",
+          "pts": 27,
+          "played": 10
         },
         {
           "pos": 4,
-          "name": "BILLIONAIRES",
-          "pts": 21,
-          "played": 9
+          "name": "PANDA RAVNICE",
+          "pts": 24,
+          "played": 10
         },
         {
           "pos": 5,
-          "name": "PANDA RAVNICE",
+          "name": "BILLIONAIRES",
           "pts": 21,
           "played": 9
         },
@@ -39,13 +39,13 @@
           "pos": 6,
           "name": "JANJE MIX TEAM",
           "pts": 20,
-          "played": 9
+          "played": 10
         },
         {
           "pos": 7,
           "name": "A1",
           "pts": 15,
-          "played": 9
+          "played": 10
         },
         {
           "pos": 8,
@@ -63,7 +63,7 @@
           "pos": 10,
           "name": "AGRAM DARTS TEAM",
           "pts": 6,
-          "played": 9
+          "played": 10
         },
         {
           "pos": 11,
@@ -87,7 +87,7 @@
           "pos": 14,
           "name": "JANJE ORION",
           "pts": 2,
-          "played": 9
+          "played": 10
         }
       ],
       "matches": [
@@ -176,9 +176,9 @@
           "round": 10,
           "home": "KNEŽIJA DRINKING DWARVES",
           "away": "A1 OTPISANI",
-          "hs": 0,
-          "as": 0,
-          "played": false,
+          "hs": 7,
+          "as": 6,
+          "played": true,
           "date": "2026-11-26T19:00:00+01:00"
         },
         {
