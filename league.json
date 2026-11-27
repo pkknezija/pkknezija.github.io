@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T20:30:43.913Z",
+  "updated": "2026-11-27T03:14:21.479Z",
   "teams": [
     {
       "name": "KNEŽIJA DRINKING DWARVES",
@@ -25,15 +25,15 @@
         },
         {
           "pos": 4,
-          "name": "PANDA RAVNICE",
+          "name": "BILLIONAIRES",
           "pts": 24,
           "played": 10
         },
         {
           "pos": 5,
-          "name": "BILLIONAIRES",
-          "pts": 21,
-          "played": 9
+          "name": "PANDA RAVNICE",
+          "pts": 24,
+          "played": 10
         },
         {
           "pos": 6,
@@ -57,25 +57,25 @@
           "pos": 9,
           "name": "GOSPOĐE",
           "pts": 9,
-          "played": 9
+          "played": 10
         },
         {
           "pos": 10,
-          "name": "AGRAM DARTS TEAM",
-          "pts": 6,
+          "name": "A1 OTPISANI",
+          "pts": 7,
           "played": 10
         },
         {
           "pos": 11,
           "name": "KNEŽIJA DRINKING DWARVES",
-          "pts": 6,
-          "played": 9
+          "pts": 7,
+          "played": 10
         },
         {
           "pos": 12,
-          "name": "A1 OTPISANI",
-          "pts": 5,
-          "played": 9
+          "name": "AGRAM DARTS TEAM",
+          "pts": 6,
+          "played": 10
         },
         {
           "pos": 13,
@@ -176,8 +176,8 @@
           "round": 10,
           "home": "KNEŽIJA DRINKING DWARVES",
           "away": "A1 OTPISANI",
-          "hs": 7,
-          "as": 6,
+          "hs": 8,
+          "as": 9,
           "played": true,
           "date": "2026-11-26T19:00:00+01:00"
         },
