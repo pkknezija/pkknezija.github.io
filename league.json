@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T21:41:34.856Z",
+  "updated": "2026-11-28T03:35:44.673Z",
   "teams": [
     {
       "name": "KNEŽIJA DRINKING DWARVES",
@@ -346,8 +346,8 @@
         {
           "pos": 3,
           "name": "KNEŽIJA UNITED",
-          "pts": 19,
-          "played": 9
+          "pts": 22,
+          "played": 10
         },
         {
           "pos": 4,
@@ -377,7 +377,7 @@
           "pos": 8,
           "name": "CB X",
           "pts": 10,
-          "played": 9
+          "played": 10
         },
         {
           "pos": 9,
@@ -484,7 +484,7 @@
           "round": 11,
           "home": "CB X",
           "away": "KNEŽIJA UNITED",
-          "hs": 6,
+          "hs": 7,
           "as": 9,
           "played": true,
           "date": "2026-11-27T19:00:00+01:00"
@@ -587,27 +587,27 @@
       "standings": [
         {
           "pos": 1,
+          "name": "FAKINI KNEŽIJA",
+          "pts": 24,
+          "played": 10
+        },
+        {
+          "pos": 2,
           "name": "PK ZAPAD 1",
           "pts": 23,
           "played": 10
         },
         {
-          "pos": 2,
+          "pos": 3,
           "name": "VIZITA",
           "pts": 22,
           "played": 10
         },
         {
-          "pos": 3,
+          "pos": 4,
           "name": "MOZART DUBRAVA",
           "pts": 21,
           "played": 10
-        },
-        {
-          "pos": 4,
-          "name": "FAKINI KNEŽIJA",
-          "pts": 21,
-          "played": 9
         },
         {
           "pos": 5,
@@ -619,7 +619,7 @@
           "pos": 6,
           "name": "DINAMO ZG",
           "pts": 14,
-          "played": 9
+          "played": 10
         },
         {
           "pos": 7,
@@ -630,8 +630,8 @@
         {
           "pos": 8,
           "name": "BILLIONAIRES 3 PROMILA",
-          "pts": 9,
-          "played": 9
+          "pts": 12,
+          "played": 10
         },
         {
           "pos": 9,
@@ -643,7 +643,7 @@
           "pos": 10,
           "name": "KOCKA WARRIORS",
           "pts": 8,
-          "played": 9
+          "played": 10
         },
         {
           "pos": 11,
@@ -738,8 +738,8 @@
           "round": 11,
           "home": "FAKINI KNEŽIJA",
           "away": "DINAMO ZG",
-          "hs": 9,
-          "as": 4,
+          "hs": 10,
+          "as": 6,
           "played": true,
           "date": "2026-11-27T19:00:00+01:00"
         },
